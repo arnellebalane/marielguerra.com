@@ -1,12 +1,9 @@
 type: page
-name: HomePage
+name: HomePageLayout
 label: Home Page
+layout: HomePageLayout
 hideContent: true
 fields:
-  - type: string
-    name: pageLayout
-    const: BlankLayout
-    hidden: true
   - type: string
     name: title
     label: Title

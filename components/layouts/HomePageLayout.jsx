@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-const HomePage = ({ page }) => {
+const HomePageLayout = ({ page }) => {
   return (
     <div data-sb-object-id={page.__id}>
       {page.title && <h1 data-sb-field-path="title">{page.title}</h1>}
@@ -16,4 +16,4 @@ const HomePage = ({ page }) => {
   );
 };
 
-export default HomePage;
+export default HomePageLayout;
