@@ -1,7 +1,7 @@
 {
-  "name": "stackbit-nextjs-starter",
+  "name": "marielguerra.com",
   "version": "0.2.0",
-  "repository": "https://github.com/stackbit-themes/nextjs-starter",
+  "repository": "https://github.com/arnellebalane/marielguerra.com",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
