@@ -2,15 +2,18 @@ type: object
 name: ImageGallery
 label: Image Gallery
 fields:
-  - type: model
+  - type: list
     name: images
     label: Images
-    models:
-      - Image
+    items:
+      type: model
+      models:
+        - Image
   - type: enum
-    name: layout
-    label: Layout
+    name: imageLayout
+    label: Image layout
     controlType: button-group
+    default: layoutOne
     options:
       - label: Layout One
         value: layoutOne

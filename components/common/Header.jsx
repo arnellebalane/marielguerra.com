@@ -1,39 +1,40 @@
 import Link from 'next/link';
 
-const renderHomeLink = (annotationPrefix, homeLink) => {
+const Header = ({ homeLink, navigationLinks, annotationPrefix = '' }) => {
   return (
-    <Link
-      href={homeLink.url}
-      data-sb-field-path={`${annotationPrefix}:homeLink.url#@href ${annotationPrefix}:homeLink.label`}
-    >
-      {homeLink.label}
+    <header data-sb-field-path={annotationPrefix}>
+      {homeLink && renderHomeLink(homeLink, annotationPrefix)}
+      {navigationLinks?.length &&
+        renderNavigationLinks(navigationLinks, annotationPrefix)}
+    </header>
+  );
+};
+
+const renderHomeLink = (homeLink, annotationPrefix) => {
+  return (
+    <Link href={homeLink.url}>
+      <a
+        data-sb-field-path={`${annotationPrefix}.homeLink.url#@href ${annotationPrefix}.homeLink.label`}
+      >
+        {homeLink.label}
+      </a>
     </Link>
   );
 };
 
-const renderNavigationLinks = (annotationPrefix, navigationLinks) => {
+const renderNavigationLinks = (navigationLinks, annotationPrefix) => {
   return (
-    <nav data-sb-field-path={`${annotationPrefix}:navigationLinks`}>
+    <nav>
       {navigationLinks.map((link, index) => (
-        <Link
-          key={index}
-          href={link.url}
-          data-sb-field-path={`.[${index}].url#@href .[${index}].label`}
-        >
-          {link.label}
+        <Link key={index} href={link.url}>
+          <a
+            data-sb-field-path={`${annotationPrefix}.navigationLinks.[${index}].url#@href ${annotationPrefix}.navigationLinks.[${index}].label`}
+          >
+            {link.label}
+          </a>
         </Link>
       ))}
     </nav>
-  );
-};
-
-const Header = ({ annotationPrefix, homeLink, navigationLinks }) => {
-  return (
-    <header>
-      {homeLink && renderHomeLink(annotationPrefix, homeLink)}
-      {navigationLinks?.length &&
-        renderNavigationLinks(annotationPrefix, navigationLinks)}
-    </header>
   );
 };
 

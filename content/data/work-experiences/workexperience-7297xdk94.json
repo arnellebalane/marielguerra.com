@@ -1,0 +1,14 @@
+{
+    "type": "WorkExperience",
+    "thumbnail": {
+        "altText": "Web Designer @ Newlogic",
+        "url": "/images/exp-newlogic.jpg"
+    },
+    "title": "Web Designer",
+    "company": "Newlogic",
+    "duration": "Nov 2021-Present",
+    "location": "Cebu, Philippines",
+    "description": [
+        "Designs websites, creates graphics, edits photos and videos through Figma, Adobe Illustrator & InDesign, and Adobe Photoshop & Premiere Pro, respectively."
+    ]
+}

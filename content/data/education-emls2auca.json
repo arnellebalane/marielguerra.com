@@ -1,0 +1,10 @@
+{
+    "type": "Education",
+    "thumbnail": {
+        "altText": "Filmmaking",
+        "url": "/images/ed-filmmaking.jpg"
+    },
+    "title": "Filmmaking",
+    "institution": "Film & Media Arts International Academy",
+    "duration": "2019-2020"
+}

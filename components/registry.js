@@ -7,6 +7,8 @@ const layouts = {
 
 const sections = {
   AboutHeroSection: dynamic(() => import('./sections/AboutHeroSection')),
+  AboutStorySection: dynamic(() => import('./sections/AboutStorySection')),
+  EducationSection: dynamic(() => import('./sections/EducationSection')),
 };
 
 export function getLayout(key) {

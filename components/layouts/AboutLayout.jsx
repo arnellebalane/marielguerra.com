@@ -7,7 +7,7 @@ const AboutLayout = ({ page, siteConfig }) => {
       <div data-sb-object-id={page.__id}>
         {page.sections?.length &&
           page.sections.map((section, index) =>
-            renderSection(section, index, `sections`),
+            renderSection(section, index, `.sections`),
           )}
       </div>
     </PageLayout>

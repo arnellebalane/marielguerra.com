@@ -4,6 +4,10 @@ label: About Story Section
 groups:
   - aboutSections
 fields:
+  - type: string
+    name: title
+    const: About Story Section
+    hidden: true
   - type: list
     name: workExperiences
     label: Work experiences
@@ -18,7 +22,7 @@ fields:
       type: string
   - type: list
     name: galleries
-    label: Galleries
+    label: Gallery
     items:
       type: model
       models:

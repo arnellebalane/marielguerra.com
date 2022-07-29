@@ -1,0 +1,14 @@
+{
+    "type": "WorkExperience",
+    "thumbnail": {
+        "altText": "Freelance Video Editor @ G Diaries",
+        "url": "/images/exp-g-diaries.jpg"
+    },
+    "title": "Freelance Video Editor",
+    "company": "G Diaries",
+    "duration": "Sep 2021-Oct 2021",
+    "location": "Cebu, Philippines",
+    "description": [
+        "Editing and Sound Design done for G Diaries Season 9 Episode 2: Be Climate-Change Ready and Season 9 Episode 4: Wildlife Treasures"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "type": "Education",
+    "thumbnail": {
+        "altText": "Graphic Design",
+        "url": "/images/ed-graphic-design.jpg"
+    },
+    "title": "Graphic Design",
+    "institution": "UV New School of Art & Design",
+    "duration": "2017-2018"
+}

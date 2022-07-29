@@ -12,6 +12,24 @@ export const siteConfigFile = sbConfig.dataDir + '/config.json';
 
 const supportedFileTypes = ['md', 'json'];
 
+const resolvers = {
+  AboutLayout(object) {
+    object.sections = object.sections.map((section) => {
+      const resolver = resolvers[section.type];
+      return resolver ? resolver(section) : section;
+    });
+    return object;
+  },
+  AboutStorySection(object) {
+    object.workExperiences = object.workExperiences.map(readContent);
+    return object;
+  },
+  EducationSection(object) {
+    object.educations = object.educations.map(readContent);
+    return object;
+  },
+};
+
 function contentFilesInPath(dir) {
   const globPattern = `${dir}/**/*.{${supportedFileTypes.join(',')}}`;
   return glob.sync(globPattern);
@@ -56,10 +74,15 @@ function urlToFilePairs() {
   return pageFiles.map((file) => [fileToUrl(file), file]);
 }
 
+export function resolveStaticProps(object) {
+  const resolver = resolvers[object.layout];
+  return resolver ? resolver(object) : object;
+}
+
 export function urlToContent(url) {
   const urlToFile = Object.fromEntries(urlToFilePairs());
   const file = urlToFile[url];
-  return readContent(file);
+  return resolveStaticProps(readContent(file));
 }
 
 export function pagesByType(contentType) {

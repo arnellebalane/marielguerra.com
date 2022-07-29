@@ -1,0 +1,10 @@
+{
+    "type": "Education",
+    "thumbnail": {
+        "altText": "BS Biology",
+        "url": "/images/ed-bs-biology.jpg"
+    },
+    "title": "BS Biology",
+    "institution": "Cebu Doctor's University",
+    "duration": "2013-2015"
+}

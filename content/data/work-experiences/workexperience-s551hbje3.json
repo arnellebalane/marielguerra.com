@@ -1,0 +1,14 @@
+{
+    "type": "WorkExperience",
+    "thumbnail": {
+        "altText": "Designer & Filmmaker @ Self-Employed",
+        "url": "/images/exp-self-employed.jpg"
+    },
+    "title": "Designer & Filmmaker",
+    "company": "Self-Employed",
+    "duration": "Sep 2019-Present",
+    "location": "Cebu, Philippines",
+    "description": [
+        "Freelancing as a video editor, colorist, production designer, production manager and graphic designer"
+    ]
+}
