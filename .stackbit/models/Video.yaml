@@ -1,0 +1,11 @@
+type: object
+name: Video
+label: Video
+fields:
+  - type: string
+    name: url
+    label: URL
+    required: true
+  - type: string
+    name: title
+    label: Title

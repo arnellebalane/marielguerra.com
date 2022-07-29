@@ -12,9 +12,15 @@ assets:
   uploadDir: images
   publicPath: /
 contentModels:
-  HomePageLayout:
+  HomeLayout:
     isPage: true
     singleInstance: true
     urlPath: '/'
     file: 'index.md'
-    newFilePath: 'index.md'
+  AboutLayout:
+    isPage: true
+    singleInstance: true
+    urlPath: '/about/'
+    file: 'about.md'
+  WorkExperience:
+    newFilePath: 'work-experiences/{slug}.json'

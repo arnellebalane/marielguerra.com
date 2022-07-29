@@ -1,7 +1,7 @@
 type: page
-name: HomePageLayout
+name: HomeLayout
 label: Home Page
-layout: HomePageLayout
+layout: HomeLayout
 hideContent: true
 fields:
   - type: string
@@ -18,3 +18,4 @@ fields:
     label: Background
     models:
       - Image
+      - Video

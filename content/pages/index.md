@@ -1,5 +1,5 @@
 ---
-layout: HomePageLayout
+layout: HomeLayout
 title: Mariel Guerra
 link:
   label: See my works

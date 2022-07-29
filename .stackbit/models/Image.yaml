@@ -9,3 +9,4 @@ fields:
   - type: string
     name: altText
     label: Alternate text
+    default: Replace this alternate text

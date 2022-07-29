@@ -1,7 +1,8 @@
 import dynamic from 'next/dynamic';
 
 const layouts = {
-  HomePageLayout: dynamic(() => import('./layouts/HomePageLayout')),
+  AboutLayout: dynamic(() => import('./layouts/AboutLayout')),
+  HomeLayout: dynamic(() => import('./layouts/HomeLayout')),
 };
 
 export function getLayout(key) {

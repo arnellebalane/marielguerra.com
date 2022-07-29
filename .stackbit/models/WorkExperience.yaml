@@ -1,0 +1,31 @@
+type: data
+name: WorkExperience
+label: Work Experience
+fields:
+  - type: model
+    name: thumbnail
+    label: Thumbnail
+    models:
+      - Image
+  - type: string
+    name: title
+    label: Title
+    required: true
+  - type: string
+    name: company
+    label: Company
+    required: true
+  - type: string
+    name: duration
+    label: Duration
+    required: true
+  - type: string
+    name: location
+    label: Location
+    required: true
+  - type: list
+    name: description
+    label: Description
+    required: true
+    items:
+      type: string

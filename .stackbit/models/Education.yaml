@@ -1,0 +1,21 @@
+type: data
+name: Education
+label: Education
+fields:
+  - type: model
+    name: thumbnail
+    label: Thumbnail
+    models:
+      - Image
+  - type: string
+    name: title
+    label: Title
+    required: true
+  - type: string
+    name: institution
+    label: Institution
+    required: true
+  - type: string
+    name: duration
+    label: Duration
+    required: true

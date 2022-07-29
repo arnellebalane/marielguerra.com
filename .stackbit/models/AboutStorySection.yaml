@@ -1,0 +1,28 @@
+type: object
+name: AboutStorySection
+label: About Story Section
+groups:
+  - aboutSections
+fields:
+  - type: list
+    name: workExperiences
+    label: Work experiences
+    items:
+      type: reference
+      models:
+        - WorkExperience
+  - type: list
+    name: content
+    label: Content
+    items:
+      type: string
+  - type: list
+    name: galleries
+    label: Galleries
+    items:
+      type: model
+      models:
+        - ImageGallery
+  - type: string
+    name: closingText
+    label: Closing text

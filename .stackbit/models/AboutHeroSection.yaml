@@ -1,0 +1,25 @@
+type: object
+name: AboutHeroSection
+label: About Hero Section
+groups:
+  - aboutSections
+fields:
+  - type: model
+    name: image
+    label: Image
+    required: true
+    models:
+      - Image
+  - type: markdown
+    name: title
+    label: Title
+    required: true
+  - type: markdown
+    name: description
+    label: Description
+    required: true
+  - type: model
+    name: background
+    label: Background
+    models:
+      - Image

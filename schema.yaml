@@ -17,11 +17,11 @@ Link
 
 Video
 - url: string
-- alt: string
+- title: string
 
 Image
 - url: image
-- alt: string
+- altText: string
 
 WorkExperience
 - thumbnail: Image
