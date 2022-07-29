@@ -3,15 +3,27 @@ import Link from 'next/link';
 const HomeLayout = ({ page }) => {
   return (
     <div data-sb-object-id={page.__id}>
-      {page.title && <h1 data-sb-field-path=".title">{page.title}</h1>}
-      {page.link && (
-        <Link href={page.link.url}>
-          <a data-sb-field-path=".link.url#@href .link.label">
-            {page.link.label}
-          </a>
-        </Link>
-      )}
+      {renderTitle(page.title)}
+      {renderLink(page.link)}
     </div>
+  );
+};
+
+const renderTitle = (title) => {
+  if (!title) {
+    return null;
+  }
+  return <h1 data-sb-field-path=".title">{title}</h1>;
+};
+
+const renderLink = (link) => {
+  if (!link) {
+    return null;
+  }
+  return (
+    <Link href={link.url}>
+      <a data-sb-field-path=".link.url#@href .link.label">{link.label}</a>
+    </Link>
   );
 };
 

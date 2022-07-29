@@ -1,0 +1,12 @@
+type: data
+name: Tag
+label: Tag
+fields:
+  - type: string
+    name: label
+    label: Lael
+    required: true
+  - type: string
+    name: value
+    label: Value
+    required: true

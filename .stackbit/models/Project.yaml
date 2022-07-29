@@ -1,0 +1,38 @@
+type: data
+name: Project
+label: Project
+fields:
+  - type: model
+    name: thumbnail
+    label: Thumbnail
+    models:
+      - Image
+  - type: model
+    name: video
+    label: Video
+    models:
+      - Video
+  - type: string
+    name: title
+    label: Title
+    required: true
+  - type: string
+    name: description
+    label: Description
+    required: true
+  - type: string
+    name: bgColor
+    label: Background color
+    required: true
+  - type: string
+    name: textColor
+    label: Text color
+    required: true
+  - type: list
+    name: tags
+    label: Tags
+    required: true
+    items:
+      type: reference
+      models:
+        - Tag

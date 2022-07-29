@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic';
 const layouts = {
   AboutLayout: dynamic(() => import('./layouts/AboutLayout')),
   HomeLayout: dynamic(() => import('./layouts/HomeLayout')),
+  PortfolioLayout: dynamic(() => import('./layouts/PortfolioLayout')),
 };
 
 const sections = {

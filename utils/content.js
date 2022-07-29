@@ -20,6 +20,10 @@ const resolvers = {
     });
     return object;
   },
+  PortfolioLayout(object) {
+    object.projects = object.projects.map(readContent);
+    return object;
+  },
   AboutStorySection(object) {
     object.workExperiences = object.workExperiences.map(readContent);
     return object;

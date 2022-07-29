@@ -1,0 +1,18 @@
+type: page
+name: PortfolioLayout
+label: Portfolio Page
+layout: PortfolioLayout
+hideContent: true
+fields:
+  - type: markdown
+    name: content
+    label: Content
+    required: true
+  - type: list
+    name: projects
+    label: Projects
+    required: true
+    items:
+      type: reference
+      models:
+        - Project
