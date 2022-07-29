@@ -1,4 +1,4 @@
-type: data
+type: object
 name: HeaderConfig
 label: Header Config
 fields:
@@ -9,6 +9,6 @@ fields:
     name: navigationLinks
     label: Navigation links
     items:
-      - type: model
-        models:
-          - Link
+      type: model
+      models:
+        - Link

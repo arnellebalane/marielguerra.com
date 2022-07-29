@@ -1,7 +1,6 @@
 type: page
 name: HomePage
 label: Home Page
-singleInstance: true
 hideContent: true
 fields:
   - type: string

@@ -9,13 +9,13 @@ fields:
     name: contactLinks
     label: Contact links
     items:
-      - type: model
-        models:
-          - Link
+      type: model
+      models:
+        - Link
   - type: list
     name: socialLinks
     label: Social links
     items:
-      - type: model
-        models:
-          - Link
+      type: model
+      models:
+        - Link

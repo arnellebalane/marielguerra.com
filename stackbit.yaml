@@ -13,5 +13,7 @@ assets:
 contentModels:
   HomePage:
     isPage: true
+    singleInstance: true
     urlPath: '/'
+    file: 'index.md'
     newFilePath: 'index.md'
