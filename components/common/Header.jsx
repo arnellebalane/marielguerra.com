@@ -4,7 +4,7 @@ const Header = ({ homeLink, navigationLinks, annotationPrefix = '' }) => {
   return (
     <header data-sb-field-path={annotationPrefix}>
       {homeLink && renderHomeLink(homeLink, annotationPrefix)}
-      {navigationLinks?.length &&
+      {navigationLinks?.length > 0 &&
         renderNavigationLinks(navigationLinks, annotationPrefix)}
     </header>
   );

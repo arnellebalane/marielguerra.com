@@ -10,7 +10,7 @@ const EducationSection = ({
   return (
     <section data-sb-field-path={annotationPrefix}>
       {title && renderTitle(title)}
-      {educations?.length && renderEducations(educations)}
+      {educations?.length > 0 && renderEducations(educations)}
       {link && renderLink(link)}
     </section>
   );

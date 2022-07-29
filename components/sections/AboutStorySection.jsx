@@ -11,9 +11,9 @@ const AboutStorySection = ({
 }) => {
   return (
     <section data-sb-field-path={annotationPrefix}>
-      {workExperiences?.length && renderWorkExperiences(workExperiences)}
-      {content?.length && renderContent(content)}
-      {galleries?.length && renderGalleries(galleries)}
+      {workExperiences?.length > 0 && renderWorkExperiences(workExperiences)}
+      {content?.length > 0 && renderContent(content)}
+      {galleries?.length > 0 && renderGalleries(galleries)}
       {closingText && renderClosingText(closingText)}
     </section>
   );

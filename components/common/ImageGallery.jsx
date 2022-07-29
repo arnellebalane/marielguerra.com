@@ -4,7 +4,7 @@ const ImageGallery = ({ images, imageLayout, annotationPrefix = '' }) => {
   return (
     <div data-sb-field-path={annotationPrefix}>
       <p data-sb-field-path=".imageLayout">{imageLayout}</p>
-      {images?.length && renderImages(images)}
+      {images?.length > 0 && renderImages(images)}
     </div>
   );
 };

@@ -1,56 +1,68 @@
 {
-  "type": "SiteConfig",
-  "header": {
-    "type": "HeaderConfig",
-    "homeLink": {
-      "type": "Link",
-      "label": "Mariel Guerra",
-      "url": "/"
+    "type": "SiteConfig",
+    "header": {
+        "type": "HeaderConfig",
+        "homeLink": {
+            "type": "Link",
+            "label": "Mariel Guerra",
+            "url": "/"
+        },
+        "navigationLinks": [
+            {
+                "type": "Link",
+                "label": "About",
+                "url": "/about/"
+            },
+            {
+                "type": "Link",
+                "label": "Portfolio",
+                "url": "/portfolio/"
+            },
+            {
+                "type": "Link",
+                "label": "Contact",
+                "url": "/contact/"
+            }
+        ]
     },
-    "navigationLinks": [
-      {
-        "type": "Link",
-        "label": "About",
-        "url": "/about/"
-      },
-      {
-        "type": "Link",
-        "label": "Portfolio",
-        "url": "/portfolio/"
-      },
-      {
-        "type": "Link",
-        "label": "Contact",
-        "url": "/contact/"
-      }
-    ]
-  },
-  "footer": {
-    "type": "FooterConfig",
-    "title": "Mariel Guerra",
-    "contactLinks": [
-      {
-        "type": "Link",
-        "label": "marielguerra.prod@gmail.com",
-        "url": "mailto:marielguerra.prod@gmail.com"
-      },
-      {
-        "type": "Link",
-        "label": "+63 917 715 3425",
-        "url": "tel:+639177153425"
-      }
-    ]
-  },
-  "socialLinks": [
-    {
-      "type": "Link",
-      "label": "Facebook",
-      "url": "https://www.facebook.com/earthtomarsi"
+    "footer": {
+        "type": "FooterConfig",
+        "title": "Mariel Guerra",
+        "contactLinks": [
+            {
+                "type": "Link",
+                "label": "marielguerra.prod@gmail.com",
+                "url": "mailto:marielguerra.prod@gmail.com"
+            },
+            {
+                "type": "Link",
+                "label": "+63 917 715 3425",
+                "url": "tel:+639177153425"
+            }
+        ],
+        "socialLinks": [
+            {
+                "type": "Link",
+                "label": "Facebook",
+                "url": "https://www.facebook.com/earthtomarsi"
+            },
+            {
+                "type": "Link",
+                "label": "Instagram",
+                "url": "https://www.instagram.com/earthtomarsi/"
+            }
+        ]
     },
-    {
-      "type": "Link",
-      "label": "Instagram",
-      "url": "https://www.instagram.com/earthtomarsi/"
-    }
-  ]
+    "socialLinks": [
+        {
+            "type": "Link",
+            "label": "Facebook",
+            "url": "https://www.facebook.com/earthtomarsi"
+        },
+        {
+            "type": "Link",
+            "label": "Instagram",
+            "url": "https://www.instagram.com/earthtomarsi/"
+        }
+    ]
 }
