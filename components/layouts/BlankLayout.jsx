@@ -1,7 +1,5 @@
-import PageComponent from '../PageComponent';
-
-const EmptyLayout = (props) => {
-  return <PageComponent {...props} />;
+const EmptyLayout = ({ children }) => {
+  return children;
 };
 
 export default EmptyLayout;

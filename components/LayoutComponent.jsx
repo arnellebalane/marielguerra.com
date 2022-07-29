@@ -1,3 +1,4 @@
+import PageComponent from './PageComponent';
 import { getComponent } from './components-registry';
 
 const LayoutComponent = ({ page, ...props }) => {
@@ -11,7 +12,11 @@ const LayoutComponent = ({ page, ...props }) => {
     throw new Error(`No layout is registered for type:'${page.layout}`);
   }
 
-  return <Layout page={page} {...props} />;
+  return (
+    <Layout page={page} {...props}>
+      <PageComponent page={page} {...props} />
+    </Layout>
+  );
 };
 
 export default LayoutComponent;
