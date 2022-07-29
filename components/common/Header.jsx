@@ -3,14 +3,16 @@ import Link from 'next/link';
 const Header = ({ homeLink, navigationLinks, annotationPrefix = '' }) => {
   return (
     <header data-sb-field-path={annotationPrefix}>
-      {homeLink && renderHomeLink(homeLink, annotationPrefix)}
-      {navigationLinks?.length > 0 &&
-        renderNavigationLinks(navigationLinks, annotationPrefix)}
+      {renderHomeLink(homeLink, annotationPrefix)}
+      {renderNavigationLinks(navigationLinks, annotationPrefix)}
     </header>
   );
 };
 
 const renderHomeLink = (homeLink, annotationPrefix) => {
+  if (!homeLink) {
+    return null;
+  }
   return (
     <Link href={homeLink.url}>
       <a
@@ -23,6 +25,9 @@ const renderHomeLink = (homeLink, annotationPrefix) => {
 };
 
 const renderNavigationLinks = (navigationLinks, annotationPrefix) => {
+  if (navigationLinks?.length === 0) {
+    return null;
+  }
   return (
     <nav>
       {navigationLinks.map((link, index) => (

@@ -13,14 +13,17 @@ const AboutHeroSection = ({
       style={{ backgroundImage: renderBackground(background) }}
       data-sb-field-path={annotationPrefix}
     >
-      {image?.url && renderImage(image)}
-      {title && renderTitle(title)}
-      {description && renderDescription(description)}
+      {renderImage(image)}
+      {renderTitle(title)}
+      {renderDescription(description)}
     </section>
   );
 };
 
 const renderImage = (image) => {
+  if (!image?.url) {
+    return null;
+  }
   return (
     <Image
       src={image.url}
@@ -33,15 +36,24 @@ const renderImage = (image) => {
 };
 
 const renderTitle = (title) => {
+  if (!title) {
+    return null;
+  }
   return <Markdown data-sb-field-path=".title">{title}</Markdown>;
 };
 
 const renderDescription = (description) => {
+  if (!description) {
+    return null;
+  }
   return <Markdown data-sb-field-path=".description">{description}</Markdown>;
 };
 
 const renderBackground = (background) => {
-  return background?.url ? `url(${background.url})` : 'none';
+  if (!background?.url) {
+    return 'none';
+  }
+  return `url(${background.url})`;
 };
 
 export default AboutHeroSection;

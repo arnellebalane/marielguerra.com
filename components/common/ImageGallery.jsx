@@ -4,12 +4,15 @@ const ImageGallery = ({ images, imageLayout, annotationPrefix = '' }) => {
   return (
     <div data-sb-field-path={annotationPrefix}>
       <p data-sb-field-path=".imageLayout">{imageLayout}</p>
-      {images?.length > 0 && renderImages(images)}
+      {renderImages(images)}
     </div>
   );
 };
 
 const renderImages = (images) => {
+  if (images?.length === 0) {
+    return null;
+  }
   return (
     <div data-sb-field-path=".images">
       {images.map((image, index) => (

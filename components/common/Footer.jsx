@@ -1,27 +1,31 @@
 import Link from 'next/link';
 
 const Footer = ({
-  title = '',
-  contactLinks = [],
-  socialLinks = [],
+  title,
+  contactLinks,
+  socialLinks,
   annotationPrefix = '',
 }) => {
   return (
     <footer data-sb-field-path={annotationPrefix}>
-      {title && renderTitle(title, annotationPrefix)}
-      {contactLinks?.length > 0 &&
-        renderContactLinks(contactLinks, annotationPrefix)}
-      {socialLinks?.length > 0 &&
-        renderSocialLinks(socialLinks, annotationPrefix)}
+      {renderTitle(title, annotationPrefix)}
+      {renderContactLinks(contactLinks, annotationPrefix)}
+      {renderSocialLinks(socialLinks, annotationPrefix)}
     </footer>
   );
 };
 
 const renderTitle = (title, annotationPrefix) => {
+  if (!title) {
+    return null;
+  }
   return <h5 data-sb-field-path={`${annotationPrefix}.title`}>{title}</h5>;
 };
 
 const renderContactLinks = (contactLinks, annotationPrefix) => {
+  if (contactLinks?.length === 0) {
+    return null;
+  }
   return (
     <div>
       {contactLinks.map((contactLink, index) => (
@@ -38,6 +42,9 @@ const renderContactLinks = (contactLinks, annotationPrefix) => {
 };
 
 const renderSocialLinks = (socialLinks, annotationPrefix) => {
+  if (socialLinks?.length === 0) {
+    return null;
+  }
   return (
     <div>
       {socialLinks.map((socialLink, index) => (
