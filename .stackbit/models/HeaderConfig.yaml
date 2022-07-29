@@ -1,0 +1,14 @@
+type: data
+name: HeaderConfig
+label: Header Config
+fields:
+  - type: Link
+    name: homeLink
+    label: Home link
+  - type: list
+    name: navigationLinks
+    label: Navigation links
+    items:
+      - type: model
+        models:
+          - Link

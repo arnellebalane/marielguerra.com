@@ -1,0 +1,11 @@
+type: object
+name: Image
+label: Image
+fields:
+  - type: image
+    name: url
+    label: URL
+    required: true
+  - type: string
+    name: altText
+    label: Alternate text

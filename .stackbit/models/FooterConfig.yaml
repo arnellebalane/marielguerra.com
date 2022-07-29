@@ -1,7 +1,21 @@
+type: object
 name: FooterConfig
 label: Footer Config
-labelField: body
 fields:
-  - type: markdown
-    name: body
-    label: Footer Text
+  - type: string
+    name: title
+    label: Title
+  - type: list
+    name: contactLinks
+    label: Contact links
+    items:
+      - type: model
+        models:
+          - Link
+  - type: list
+    name: socialLinks
+    label: Social links
+    items:
+      - type: model
+        models:
+          - Link

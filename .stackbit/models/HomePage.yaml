@@ -1,0 +1,20 @@
+type: page
+name: HomePage
+label: Home Page
+singleInstance: true
+hideContent: true
+fields:
+  - type: string
+    name: title
+    label: Title
+    required: true
+  - type: model
+    name: link
+    label: Link
+    models:
+      - Link
+  - type: model
+    name: background
+    label: Background
+    models:
+      - Image

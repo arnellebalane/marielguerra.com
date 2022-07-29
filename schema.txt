@@ -1,0 +1,71 @@
+HeaderConfig
+- homeLink: Link
+- navigationLinks: Link[]
+
+FooterConfig
+- title: string
+- contactLinks: Link[]
+- socialLinks: Link[]
+
+SiteConfig
+- headerConfig: HeaderConfig
+- footerConfig: FooterConfig
+
+Link
+- label: string
+- url: string
+
+Video
+- url: string
+- alt: string
+
+Image
+- url: image
+- alt: string
+
+WorkExperience
+- thumbnail: Image
+- title: string
+- company: string
+- duration: string
+- location: string
+- description: string[]
+
+Education
+- thumbnail: Image
+- title: string
+- institution: string
+- duration: string
+- link: Link
+
+ImageGallery
+- images: Image[]
+- layout: enum
+
+HomeLayout
+- title: string
+- link: Link
+- background: Image | Video
+
+PageLayout
+- showBackToTop: boolean
+
+AboutPage
+- sections: AboutHeroSection | AboutStorySection | EducationSection
+
+AboutHeroSection
+- image: Image
+- title: markdown
+- description: markdown
+- background: Image
+
+AboutStorySection
+- workExperiences: WorkExperience[]
+- content: markdown[]
+- galleries: ImageGallery[]
+- closingText: string
+
+EducationSection
+- title: string
+- educations: Education[]
+- link: Link
