@@ -22,7 +22,7 @@ const renderImages = (images) => {
           alt={image.altText}
           width="100"
           height="100"
-          data-sb-field-path={`.[${index}]`}
+          data-sb-field-path={`.[${index}].url#@src .[${index}].altText#@alt`}
         />
       ))}
     </div>

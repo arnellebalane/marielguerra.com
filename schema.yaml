@@ -69,3 +69,31 @@ EducationSection
 - title: string
 - educations: Education[]
 - link: Link
+
+Tag
+- label: string
+- value: string
+
+Project
+- thumbnail: Image
+- video: Video
+- title: string
+- description: string
+- color: string
+- fgColor: string
+- tags: Tag[]
+
+PortfolioLayout
+- content: markdown
+- projects: Project[]
+
+FormField
+- label: string
+- name: string
+- type: enum
+- required: boolean
+
+ContactLayout
+- content: markdown
+- fields: FormField[]
+- submitLabel: string

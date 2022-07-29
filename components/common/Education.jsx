@@ -15,7 +15,7 @@ const Education = ({
           alt={thumbnail.altText}
           width="420"
           height="240"
-          data-sb-field-path=".thumbnail.url#@src .thumbnail.label"
+          data-sb-field-path=".thumbnail.url#@src .thumbnail.altText#@alt"
         />
       )}
 

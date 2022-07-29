@@ -19,7 +19,7 @@ fields:
     name: content
     label: Content
     items:
-      type: string
+      type: text
   - type: list
     name: galleries
     label: Gallery
