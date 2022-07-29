@@ -1,34 +1,11 @@
-import Head from 'next/head';
+import LayoutComponent from '../components/LayoutComponent';
+import { pagesWithLayout, siteConfig, urlToContent } from '../utils/content';
 
-import { DynamicComponent } from '../components/DynamicComponent';
-import { Footer } from '../components/Footer';
-import { pagesByType, siteConfig, urlToContent } from '../utils/content';
-
-const FlexiblePage = ({ page, siteConfig }) => {
-  return (
-    <div className="page">
-      <Head>
-        <title>{page.title}</title>
-      </Head>
-      <div data-sb-object-id={page.__id}>
-        {page.sections?.length > 0 && (
-          <div data-sb-field-path="sections">
-            {page.sections.map((section, index) => (
-              <DynamicComponent
-                key={index}
-                {...section}
-                data-sb-field-path={`.${index}`}
-              />
-            ))}
-          </div>
-        )}
-      </div>
-      <Footer siteConfig={siteConfig} />
-    </div>
-  );
+const DynamicPage = ({ page, siteConfig }) => {
+  return <LayoutComponent page={page} siteConfig={siteConfig} />;
 };
 
-export default FlexiblePage;
+export default DynamicPage;
 
 export function getStaticProps({ params }) {
   const url = '/' + (params.slug || []).join('/');
@@ -36,7 +13,7 @@ export function getStaticProps({ params }) {
 }
 
 export function getStaticPaths() {
-  const pages = pagesByType('Page');
+  const pages = pagesWithLayout();
   return {
     paths: Object.keys(pages),
     fallback: false,

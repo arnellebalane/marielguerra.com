@@ -71,6 +71,15 @@ export function pagesByType(contentType) {
   return result;
 }
 
+export function pagesWithLayout() {
+  let result = {};
+  for (const [url, file] of urlToFilePairs()) {
+    const content = readContent(file);
+    if (content.layout) result[url] = content;
+  }
+  return result;
+}
+
 export function siteConfig() {
   return readContent(siteConfigFile);
 }

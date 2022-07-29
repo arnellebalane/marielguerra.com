@@ -1,5 +1,6 @@
 ---
 type: HomePage
+layout: BlankLayout
 title: Mariel Guerra
 link:
   type: Link

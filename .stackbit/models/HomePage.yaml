@@ -5,6 +5,10 @@ singleInstance: true
 hideContent: true
 fields:
   - type: string
+    name: pageLayout
+    const: BlankLayout
+    hidden: true
+  - type: string
     name: title
     label: Title
     required: true
