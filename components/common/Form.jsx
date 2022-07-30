@@ -1,9 +1,21 @@
 import Button from './Button';
 import * as S from './Form.styles';
 
-const Form = ({ fields, submitLabel, annotationPrefix = '' }) => {
+const Form = ({
+  formName,
+  fields,
+  submitLabel,
+  submissionSubject,
+  successMessage,
+  annotationPrefix = '',
+}) => {
+  const action = `/redirect?text=${encodeURIComponent(successMessage)}`;
+
   return (
-    <S.Form action="#">
+    <S.Form name={formName} action={action} method="post" data-netlify="true">
+      <input type="hidden" name="form-name" value={formName} />
+      <input type="hidden" name="subject" value={submissionSubject} />
+
       <div data-sb-field-path={annotationPrefix}>
         {fields.map((field, index) => (
           <S.Field

@@ -9,8 +9,9 @@ content: |
   For other general inquiries,<br>
   call +63 917 715 3425<br>
   You’re also welcome to reach me at marielguerra.prod@gmail.com
+formName: contact
 fields:
-  - type: string
+  - type: text
     label: Name
     name: name
     required: true
@@ -23,4 +24,6 @@ fields:
     name: message
     required: true
 submitLabel: Submit
+submissionSubject: Someone contacted you from marielguerra.com
+successMessage: Form submitted successfully.
 ---

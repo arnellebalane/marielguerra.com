@@ -5,6 +5,7 @@ const layouts = {
   ContactLayout: dynamic(() => import('./layouts/ContactLayout')),
   HomeLayout: dynamic(() => import('./layouts/HomeLayout')),
   PortfolioLayout: dynamic(() => import('./layouts/PortfolioLayout')),
+  RedirectLayout: dynamic(() => import('./layouts/RedirectLayout')),
 };
 
 const sections = {

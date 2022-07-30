@@ -12,7 +12,7 @@ const ContactLayout = ({ page, siteConfig }) => {
         <L.Grid>
           <S.PageContent data-sb-object-id={page.__id}>
             {renderContent(page.content)}
-            {renderForm(page.fields, page.submitLabel)}
+            {renderForm(page)}
           </S.PageContent>
         </L.Grid>
         <L.Spacer />
@@ -32,15 +32,18 @@ const renderContent = (content) => {
   );
 };
 
-const renderForm = (fields, submitLabel = 'Submit') => {
-  if (fields?.length === 0) {
+const renderForm = (page) => {
+  if (page.fields?.length === 0) {
     return null;
   }
   return (
     <S.PageSection>
       <Form
-        fields={fields}
-        submitLabel={submitLabel}
+        formName={page.formName}
+        fields={page.fields}
+        submitLabel={page.submitLabel}
+        submissionSubject={page.submissionSubject}
+        successMessage={page.successMessage}
         annotationPrefix=".fields"
       />
     </S.PageSection>

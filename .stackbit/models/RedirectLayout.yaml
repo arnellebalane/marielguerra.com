@@ -1,0 +1,5 @@
+type: page
+name: RedirectLayout
+label: Redirect Page
+layout: RedirectLayout
+hideContent: true

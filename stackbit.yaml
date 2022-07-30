@@ -32,6 +32,11 @@ contentModels:
     singleInstance: true
     urlPath: '/contact/'
     file: 'contact.md'
+  RedirectLayout:
+    isPage: true
+    singleInstance: true
+    urlPath: '/redirect/'
+    file: 'redirect.md'
   WorkExperience:
     newFilePath: 'work-experiences/{slug}.json'
   Project:
