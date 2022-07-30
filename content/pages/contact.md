@@ -11,7 +11,7 @@ content: |
   You’re also welcome to reach me at marielguerra.prod@gmail.com
 formName: contact
 fields:
-  - type: string
+  - type: text
     label: Name
     name: name
     required: true

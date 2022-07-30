@@ -9,7 +9,8 @@ const Form = ({
   annotationPrefix = '',
 }) => {
   return (
-    <S.Form name={formName} method="post" data-netlify="true">
+    <S.Form name={formName} action="/success" method="post" data-netlify="true">
+      <input type="hidden" name="form-name" value={formName} />
       <input type="hidden" name="subject" value={submissionSubject} />
 
       <div data-sb-field-path={annotationPrefix}>
