@@ -26,4 +26,8 @@ export const HomeLink = styled.a`
   font-weight: 700;
   line-height: 2.2rem;
   text-transform: uppercase;
+
+  @media (min-width: 720px) {
+    font-size: 1.8rem;
+  }
 `;

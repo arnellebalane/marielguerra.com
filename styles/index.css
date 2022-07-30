@@ -1,3 +1,6 @@
+@import url('../static/fonts/PPFormula/fonts.css');
+@import url('../static/fonts/PPNeueMontreal/fonts.css');
+
 *,
 *::before,
 *::after {
@@ -26,6 +29,8 @@ body {
   font-family: var(--font-secondary);
   font-size: 1.8rem;
   font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   color: var(--fg-primary);
   background-color: var(--bg-body);
 }
