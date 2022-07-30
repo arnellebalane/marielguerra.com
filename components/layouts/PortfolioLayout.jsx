@@ -1,6 +1,6 @@
 import PageLayout from './PageLayout';
 import MarkdownContent from '../common/MarkdownContent';
-import Project from '../common/Project';
+import ProjectsFeed from '../common/ProjectsFeed';
 import * as L from '../../styles/Layout.styles';
 import * as S from './PortfolioLayout.styles';
 
@@ -37,12 +37,8 @@ const renderProjects = (projects) => {
     return null;
   }
   return (
-    <S.PageSection data-sb-field-path=".projects">
-      <S.ProjectsList>
-        {projects.map((project, index) => (
-          <Project key={index} annotationPrefix={`.[${index}]`} {...project} />
-        ))}
-      </S.ProjectsList>
+    <S.PageSection>
+      <ProjectsFeed projects={projects} annotationPrefix=".projects" />
     </S.PageSection>
   );
 };

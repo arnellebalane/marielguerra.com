@@ -17,16 +17,3 @@ export const PageSection = styled.div`
     padding-bottom: 4rem;
   }
 `;
-
-export const ProjectsList = styled.div`
-  --projects-list-columns: 1;
-
-  display: grid;
-  grid-template-columns: repeat(var(--projects-list-columns), 1fr);
-  gap: 2rem;
-
-  @media (min-width: 720px) {
-    --projects-list-columns: 2;
-    gap: 3rem;
-  }
-`;
