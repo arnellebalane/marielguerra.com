@@ -27,6 +27,11 @@ contentModels:
     singleInstance: true
     urlPath: '/portfolio/'
     file: 'portfolio.md'
+  ContactLayout:
+    isPage: true
+    singleInstance: true
+    urlPath: '/contact/'
+    file: 'contact.md'
   WorkExperience:
     newFilePath: 'work-experiences/{slug}.json'
   Project:

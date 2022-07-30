@@ -1,0 +1,27 @@
+type: object
+name: FormField
+label: Form Field
+fields:
+  - type: string
+    name: label
+    label: Label
+    required: true
+  - type: string
+    name: name
+    label: name
+    required: true
+  - type: enum
+    name: type
+    label: Type
+    default: string
+    required: true
+    controlType: dropdown
+    options:
+      - label: String
+        value: string
+      - label: Text
+        value: text
+  - type: boolean
+    name: required
+    label: Is required?
+    default: true

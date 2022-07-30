@@ -1,0 +1,23 @@
+type: page
+name: ContactLayout
+label: Contact Layout
+layout: ContactLayout
+hideContent: true
+fields:
+  - type: markdown
+    name: content
+    label: Content
+    required: true
+  - type: list
+    name: fields
+    label: Fields
+    required: true
+    items:
+      type: model
+      models:
+        - FormField
+  - type: string
+    name: submitLabel
+    label: Submit label
+    default: Submit
+    required: true
