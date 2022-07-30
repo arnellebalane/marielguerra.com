@@ -24,13 +24,15 @@ const HeaderNav = ({ links, open, onToggle, annotationPrefix = '' }) => {
 
   return (
     <nav>
-      <S.NavToggle onClick={handleToggle}>Toggle Menu</S.NavToggle>
-      <S.NavContent open={open}>
+      <S.NavToggle data-sc-open={open} onClick={handleToggle}>
+        Toggle Menu
+      </S.NavToggle>
+      <S.NavContent data-sc-open={open}>
         {links.map((link, index) => (
           <Link key={index} href={link.url} passHref>
             <S.NavLink
               data-sb-field-path={fieldPath(index)}
-              active={isActiveLink(link.url)}
+              data-sc-active={isActiveLink(link.url)}
             >
               {link.label}
             </S.NavLink>

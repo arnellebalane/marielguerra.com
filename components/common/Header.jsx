@@ -13,7 +13,7 @@ const Header = ({
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <S.Header data-sb-field-path={annotationPrefix} inverted={inverted}>
+    <S.Header data-sb-field-path={annotationPrefix} data-sc-inverted={inverted}>
       <L.Wrapper>
         <S.HeaderContent>
           {renderHomeLink(homeLink, annotationPrefix)}

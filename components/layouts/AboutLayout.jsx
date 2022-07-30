@@ -3,7 +3,7 @@ import { getSection } from '../registry';
 
 const AboutLayout = ({ page, siteConfig }) => {
   return (
-    <PageLayout page={page} siteConfig={siteConfig}>
+    <PageLayout page={page} siteConfig={siteConfig} invertedHeader>
       <div data-sb-object-id={page.__id}>
         {page.sections?.length > 0 &&
           page.sections.map((section, index) =>

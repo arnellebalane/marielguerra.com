@@ -1,14 +1,19 @@
 import styled from 'styled-components';
+import icMenu from '../../static/images/ic-menu.svg';
+import icClose from '../../static/images/ic-close.svg';
 import icNavLinkArrow from '../../static/images/ic-navlink-arrow.svg';
 
 export const NavToggle = styled.button`
   display: inline-block;
-  width: 3rem;
-  height: 3rem;
-  border: 1px solid red;
+  width: 2rem;
+  height: 2rem;
+  border: none;
 
   font-size: 0;
-  background: none;
+  background: center center no-repeat;
+  background-image: ${(props) =>
+    props['data-sc-open'] ? `url(${icClose.src})` : `url(${icMenu.src})`};
+  background-size: 100%;
 
   cursor: pointer;
 
@@ -18,7 +23,7 @@ export const NavToggle = styled.button`
 `;
 
 export const NavContent = styled.div`
-  display: ${(props) => (props.open ? 'block' : 'none')};
+  display: ${(props) => (props['data-sc-open'] ? 'block' : 'none')};
   padding-bottom: 7rem;
 
   position: absolute;
@@ -47,11 +52,11 @@ export const NavLink = styled.a`
   padding: 0 2.4rem;
 
   font-family: var(--font-primary);
-  font-size: ${(props) => (props.active ? '2.4rem' : '1.8rem')};
+  font-size: ${(props) => (props['data-sc-active'] ? '2.4rem' : '1.8rem')};
   font-weight: 500;
   line-height: 6.8rem;
   text-transform: uppercase;
-  color: ${(props) => (props.active ? 'var(--primary)' : 'inherit')};
+  color: ${(props) => (props['data-sc-active'] ? 'var(--primary)' : 'inherit')};
 
   &:hover,
   &:focus {
@@ -61,7 +66,7 @@ export const NavLink = styled.a`
 
   &::before {
     content: '';
-    display: ${(props) => (props.active ? 'block' : 'none')};
+    display: ${(props) => (props['data-sc-active'] ? 'block' : 'none')};
     width: 8rem;
     height: 4.5rem;
     margin-right: 2rem;
@@ -81,7 +86,8 @@ export const NavLink = styled.a`
     font-size: 1.2rem;
     font-weight: 700;
     line-height: 1.8rem;
-    text-decoration: ${(props) => (props.active ? 'underline' : 'none')};
+    text-decoration: ${(props) =>
+      props['data-sc-active'] ? 'underline' : 'none'};
 
     &:hover,
     &:focus {

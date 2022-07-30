@@ -4,7 +4,7 @@ import PageLayout from './PageLayout';
 
 const PortfolioLayout = ({ page, siteConfig }) => {
   return (
-    <PageLayout page={page} siteConfig={siteConfig} invertedHeader>
+    <PageLayout page={page} siteConfig={siteConfig}>
       <div data-sb-object-id={page.__id}>
         {renderContent(page.content)}
         {renderProjects(page.projects)}

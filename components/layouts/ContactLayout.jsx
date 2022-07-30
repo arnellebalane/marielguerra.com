@@ -15,6 +15,7 @@ const ContactLayout = ({ page, siteConfig }) => {
             {renderForm(page.fields, page.submitLabel)}
           </S.PageContent>
         </L.Grid>
+        <S.ContactSpacer />
       </L.Wrapper>
     </PageLayout>
   );

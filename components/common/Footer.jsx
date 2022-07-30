@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import * as L from '../../styles/Layout.styles';
+import * as S from './Footer.styles';
 
 const Footer = ({
   title,
@@ -7,11 +9,17 @@ const Footer = ({
   annotationPrefix = '',
 }) => {
   return (
-    <footer data-sb-field-path={annotationPrefix}>
-      {renderTitle(title, annotationPrefix)}
-      {renderContactLinks(contactLinks, annotationPrefix)}
-      {renderSocialLinks(socialLinks, annotationPrefix)}
-    </footer>
+    <S.Footer data-sb-field-path={annotationPrefix}>
+      <L.Wrapper>
+        <S.FooterContent>
+          <S.FlexibleDetails>
+            {renderTitle(title, annotationPrefix)}
+            {renderContactLinks(contactLinks, annotationPrefix)}
+          </S.FlexibleDetails>
+          {renderSocialLinks(socialLinks, annotationPrefix)}
+        </S.FooterContent>
+      </L.Wrapper>
+    </S.Footer>
   );
 };
 
@@ -19,25 +27,31 @@ const renderTitle = (title, annotationPrefix) => {
   if (!title) {
     return null;
   }
-  return <h5 data-sb-field-path={`${annotationPrefix}.title`}>{title}</h5>;
+  return (
+    <S.Title data-sb-field-path={`${annotationPrefix}.title`}>{title}</S.Title>
+  );
 };
 
 const renderContactLinks = (contactLinks, annotationPrefix) => {
   if (contactLinks?.length === 0) {
     return null;
   }
+
+  const fieldPath = (index) =>
+    [
+      `${annotationPrefix}.contactLinks.[${index}].url#@href`,
+      `${annotationPrefix}.contactLinks.[${index}].label`,
+    ].join(' ');
   return (
-    <div>
+    <S.ContactLinks>
       {contactLinks.map((contactLink, index) => (
-        <Link key={index} href={contactLink.url}>
-          <a
-            data-sb-field-path={`${annotationPrefix}.contactLinks.[${index}].url#@href ${annotationPrefix}.contactLinks.[${index}].label`}
-          >
+        <Link key={index} href={contactLink.url} passHref>
+          <S.ContactLink data-sb-field-path={fieldPath(index)}>
             {contactLink.label}
-          </a>
+          </S.ContactLink>
         </Link>
       ))}
-    </div>
+    </S.ContactLinks>
   );
 };
 
@@ -45,18 +59,34 @@ const renderSocialLinks = (socialLinks, annotationPrefix) => {
   if (socialLinks?.length === 0) {
     return null;
   }
+
+  const socialLinkIcon = (url) => {
+    const icons = ['facebook', 'instagram', 'linkedin'];
+    for (const icon of icons) {
+      if (url.includes(icon)) {
+        return icon;
+      }
+    }
+    return 'default';
+  };
+  const fieldPath = (index) =>
+    [
+      `${annotationPrefix}.socialLinks.[${index}].url#@href`,
+      `${annotationPrefix}.socialLinks.[${index}].label`,
+    ].join(' ');
   return (
-    <div>
+    <S.SocialLinks>
       {socialLinks.map((socialLink, index) => (
-        <Link key={index} href={socialLink.url}>
-          <a
-            data-sb-field-path={`${annotationPrefix}.socialLinks.[${index}].url#@href ${annotationPrefix}.socialLinks.[${index}].label`}
+        <Link key={index} href={socialLink.url} passHref>
+          <S.SocialLink
+            data-sb-field-path={fieldPath(index)}
+            data-sc-icon={socialLinkIcon(socialLink.url)}
           >
             {socialLink.label}
-          </a>
+          </S.SocialLink>
         </Link>
       ))}
-    </div>
+    </S.SocialLinks>
   );
 };
 

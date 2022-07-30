@@ -8,7 +8,7 @@ export const Header = styled.header`
 
   @media (min-width: 720px) {
     color: ${(props) =>
-      props.inverted ? 'var(--fg-inverted)' : 'var(--fg-primary)'};
+      props['data-sc-inverted'] ? 'var(--fg-inverted)' : 'var(--fg-primary)'};
     background-color: transparent;
   }
 `;

@@ -12,7 +12,7 @@ const Form = ({ fields, submitLabel, annotationPrefix = '' }) => {
           >
             <S.FieldLabel
               htmlFor={field.name}
-              data-required={field.required}
+              data-sc-required={field.required}
               data-sb-field-path=".label"
             >
               {field.label}

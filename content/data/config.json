@@ -43,6 +43,11 @@
         "socialLinks": [
             {
                 "type": "Link",
+                "label": "LinkedIn",
+                "url": "https://www.linkedin.com/in/earthtomarsi/"
+            },
+            {
+                "type": "Link",
                 "label": "Facebook",
                 "url": "https://www.facebook.com/earthtomarsi"
             },

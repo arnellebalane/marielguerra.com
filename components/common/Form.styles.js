@@ -29,7 +29,7 @@ export const FieldLabel = styled.label`
   text-transform: uppercase;
 
   ${(props) =>
-    props['data-required'] &&
+    props['data-sc-required'] &&
     css`
       &::after {
         content: ' *';
