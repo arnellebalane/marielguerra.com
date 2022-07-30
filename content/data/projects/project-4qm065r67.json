@@ -4,5 +4,8 @@
     "description": "Documentary",
     "bgColor": "#272727",
     "textColor": "#FFE7BE",
-    "tags": []
+    "tags": [
+        "documentary",
+        "film"
+    ]
 }

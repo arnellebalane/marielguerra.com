@@ -24,16 +24,19 @@ const Project = ({
 
 const renderThumbnail = (thumbnail) => {
   if (!thumbnail?.url) {
-    return <S.ThumbnailPlaceholder />;
+    return <S.ThumbnailWrapper />;
   }
   return (
-    <Image
-      src={thumbnail.url}
-      alt={thumbnail.altText}
-      width="460"
-      height="275"
-      data-sb-field-path=".thumbnail.url#@src .thumbnail.altText#alt"
-    />
+    <S.ThumbnailWrapper>
+      <Image
+        src={thumbnail.url}
+        alt={thumbnail.altText}
+        layout="fill"
+        objectFit="cover"
+        objectPosition="center center"
+        data-sb-field-path=".thumbnail.url#@src .thumbnail.altText#alt"
+      />
+    </S.ThumbnailWrapper>
   );
 };
 

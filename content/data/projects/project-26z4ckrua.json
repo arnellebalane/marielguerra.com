@@ -4,5 +4,12 @@
     "description": "Brand Video",
     "bgColor": "#FFDE17",
     "textColor": "#180005\n",
-    "tags": []
+    "tags": [
+        "commercial"
+    ],
+    "thumbnail": {
+        "type": "Image",
+        "altText": "The Lemon Co.",
+        "url": "/images/project-the-lemon-co.png"
+    }
 }

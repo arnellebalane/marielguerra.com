@@ -7,7 +7,8 @@ export const Project = styled.article`
   cursor: pointer;
 `;
 
-export const ThumbnailPlaceholder = styled.div`
+export const ThumbnailWrapper = styled.div`
+  position: relative;
   aspect-ratio: 460 / 275;
   background-color: var(--complementary);
 

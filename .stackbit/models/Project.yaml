@@ -33,6 +33,4 @@ fields:
     label: Tags
     required: true
     items:
-      type: reference
-      models:
-        - Tag
+      type: string
