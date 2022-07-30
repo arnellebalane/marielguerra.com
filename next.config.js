@@ -4,4 +4,7 @@ module.exports = {
     config.watchOptions.ignored.push('**/content/**');
     return config;
   },
+  compiler: {
+    styledComponents: true,
+  },
 };
