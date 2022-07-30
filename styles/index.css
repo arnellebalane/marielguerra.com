@@ -20,6 +20,10 @@ html {
   --complementary: #f3f0eb;
   --fg-complementary: #3c6b55;
 
+  --overlay-100: rgba(0, 0, 0, 0.2);
+  --overlay-200: rgba(0, 0, 0, 0.4);
+  --overlay-300: rgba(0, 0, 0, 0.8);
+
   font-size: 62.5%;
 }
 

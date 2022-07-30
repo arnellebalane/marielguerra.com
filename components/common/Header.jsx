@@ -38,7 +38,7 @@ const renderHomeLink = (homeLink, annotationPrefix) => {
     `${annotationPrefix}.homeLink.label`,
   ].join(' ');
   return (
-    <Link href={homeLink.url}>
+    <Link href={homeLink.url} passHref>
       <S.HomeLink data-sb-field-path={fieldPath}>{homeLink.label}</S.HomeLink>
     </Link>
   );

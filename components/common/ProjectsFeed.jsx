@@ -23,7 +23,7 @@ const ProjectsFeed = ({ projects, annotationPrefix = '' }) => {
   }, [selectedTag, projectsByTag, projects]);
 
   return (
-    <div data-sb-fieild-path={annotationPrefix}>
+    <div data-sb-field-path={annotationPrefix}>
       {renderTagFilters(tags, selectedTag, setSelectedTag)}
       {renderProjectsList(filteredProjects)}
     </div>
