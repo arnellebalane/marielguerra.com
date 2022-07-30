@@ -1,17 +1,24 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import * as S from './HomeLayout.styles';
 
 const HomeLayout = ({ page }) => {
   return (
-    <S.PageWrapper data-sb-object-id={page.__id}>
-      {renderBackground(page.background)}
+    <>
+      <Head>
+        <meta name="theme-color" content="#000000" />
+      </Head>
 
-      <S.PageContent>
-        {renderTitle(page.title)}
-        {renderLink(page.link)}
-      </S.PageContent>
-    </S.PageWrapper>
+      <S.PageWrapper data-sb-object-id={page.__id}>
+        {renderBackground(page.background)}
+
+        <S.PageContent>
+          {renderTitle(page.title)}
+          {renderLink(page.link)}
+        </S.PageContent>
+      </S.PageWrapper>
+    </>
   );
 };
 
