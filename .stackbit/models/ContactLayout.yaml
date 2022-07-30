@@ -21,3 +21,13 @@ fields:
     label: Submit label
     default: Submit
     required: true
+  - type: string
+    name: submissionSubject
+    label: Submission subject
+    default: Someone contacted you from marielguerra.com
+    required: true
+  - type: string
+    name: formName
+    label: Form name
+    const: contact
+    hidden: true

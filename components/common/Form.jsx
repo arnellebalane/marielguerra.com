@@ -1,9 +1,17 @@
 import Button from './Button';
 import * as S from './Form.styles';
 
-const Form = ({ fields, submitLabel, annotationPrefix = '' }) => {
+const Form = ({
+  formName,
+  fields,
+  submitLabel,
+  submissionSubject,
+  annotationPrefix = '',
+}) => {
   return (
-    <S.Form action="#">
+    <S.Form name={formName} method="post" data-netlify="true">
+      <input type="hidden" name="subject" value={submissionSubject} />
+
       <div data-sb-field-path={annotationPrefix}>
         {fields.map((field, index) => (
           <S.Field
