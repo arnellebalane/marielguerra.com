@@ -25,4 +25,5 @@ fields:
     required: true
 submitLabel: Submit
 submissionSubject: Someone contacted you from marielguerra.com
+successMessage: Form submitted successfully.
 ---

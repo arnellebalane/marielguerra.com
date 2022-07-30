@@ -6,10 +6,13 @@ const Form = ({
   fields,
   submitLabel,
   submissionSubject,
+  successMessage,
   annotationPrefix = '',
 }) => {
+  const action = `/redirect?text=${encodeURIComponent(successMessage)}`;
+
   return (
-    <S.Form name={formName} action="/success" method="post" data-netlify="true">
+    <S.Form name={formName} action={action} method="post" data-netlify="true">
       <input type="hidden" name="form-name" value={formName} />
       <input type="hidden" name="subject" value={submissionSubject} />
 

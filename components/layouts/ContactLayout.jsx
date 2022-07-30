@@ -43,6 +43,7 @@ const renderForm = (page) => {
         fields={page.fields}
         submitLabel={page.submitLabel}
         submissionSubject={page.submissionSubject}
+        successMessage={page.successMessage}
         annotationPrefix=".fields"
       />
     </S.PageSection>
