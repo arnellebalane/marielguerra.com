@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import * as S from './Project.styles';
 
 const Project = ({
   thumbnail,
@@ -11,17 +12,19 @@ const Project = ({
   annotationPrefix = '',
 }) => {
   return (
-    <article data-sb-field-path={annotationPrefix}>
+    <S.Project tabIndex={0} data-sb-field-path={annotationPrefix}>
       {renderThumbnail(thumbnail)}
-      {renderTitle(title)}
-      {renderDescription(description)}
-    </article>
+      <S.Details data-sc-text={textColor} data-sc-background={bgColor}>
+        {renderTitle(title)}
+        {renderDescription(description)}
+      </S.Details>
+    </S.Project>
   );
 };
 
 const renderThumbnail = (thumbnail) => {
   if (!thumbnail?.url) {
-    return null;
+    return <S.ThumbnailPlaceholder />;
   }
   return (
     <Image
@@ -38,14 +41,18 @@ const renderTitle = (title) => {
   if (!title) {
     return null;
   }
-  return <h2 data-sb-field-path=".title">{title}</h2>;
+  return <S.Title data-sb-field-path=".title">{title}</S.Title>;
 };
 
 const renderDescription = (description) => {
   if (!description) {
     return null;
   }
-  return <p data-sb-field-path=".description">{description}</p>;
+  return (
+    <S.Description data-sb-field-path=".description">
+      {description}
+    </S.Description>
+  );
 };
 
 export default Project;

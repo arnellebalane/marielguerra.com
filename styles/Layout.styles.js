@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   display: block;
+  width: 100%;
   max-width: calc(100vw - 4.8rem);
   margin: 0 auto;
 
@@ -25,5 +26,13 @@ export const Grid = styled.div`
   @media (min-width: 1024px) {
     --grid-columns: 12;
     column-gap: 3rem;
+  }
+`;
+
+export const Spacer = styled.div`
+  height: 5rem;
+
+  @media (min-width: 720px) {
+    height: 10rem;
   }
 `;

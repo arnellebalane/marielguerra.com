@@ -21,6 +21,11 @@ projects:
   - content/data/projects/project-06j3zntec.json
   - content/data/projects/project-lqj45f24l.json
   - content/data/projects/project-77wf1a5ha.json
-content: |
+content: >
   # Production Design/Edit/Color by **Mariel Guerra**
+
+
+  My post-production work involves editing, color correction and grading, sound
+  design, subtitling, and animation using the following tools: Adobe Premiere
+  Pro, Adobe After Effects, DaVinci Resolve
 ---

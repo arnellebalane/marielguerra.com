@@ -7,15 +7,15 @@ import * as S from './ContactLayout.styles';
 const ContactLayout = ({ page, siteConfig }) => {
   return (
     <PageLayout page={page} siteConfig={siteConfig}>
-      <L.Wrapper data-sb-object-id={page.__id}>
-        <S.ContactSpacer />
+      <L.Wrapper>
+        <L.Spacer />
         <L.Grid>
-          <S.PageContent>
+          <S.PageContent data-sb-object-id={page.__id}>
             {renderContent(page.content)}
             {renderForm(page.fields, page.submitLabel)}
           </S.PageContent>
         </L.Grid>
-        <S.ContactSpacer />
+        <L.Spacer />
       </L.Wrapper>
     </PageLayout>
   );
@@ -26,9 +26,9 @@ const renderContent = (content) => {
     return null;
   }
   return (
-    <S.ContactSection>
+    <S.PageSection>
       <MarkdownContent data-sb-field-path=".content">{content}</MarkdownContent>
-    </S.ContactSection>
+    </S.PageSection>
   );
 };
 
@@ -37,13 +37,13 @@ const renderForm = (fields, submitLabel = 'Submit') => {
     return null;
   }
   return (
-    <S.ContactSection>
+    <S.PageSection>
       <Form
         fields={fields}
         submitLabel={submitLabel}
         annotationPrefix=".fields"
       />
-    </S.ContactSection>
+    </S.PageSection>
   );
 };
 
