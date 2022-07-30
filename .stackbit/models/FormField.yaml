@@ -18,9 +18,11 @@ fields:
     controlType: dropdown
     options:
       - label: String
-        value: string
-      - label: Text
         value: text
+      - label: Email
+        value: email
+      - label: Text
+        value: textarea
   - type: boolean
     name: required
     label: Is required?

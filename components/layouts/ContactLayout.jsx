@@ -1,13 +1,21 @@
-import Markdown from 'markdown-to-jsx';
 import PageLayout from './PageLayout';
+import MarkdownContent from '../common/MarkdownContent';
+import Form from '../common/Form';
+import * as L from '../../styles/Layout.styles';
+import * as S from './ContactLayout.styles';
 
 const ContactLayout = ({ page, siteConfig }) => {
   return (
     <PageLayout page={page} siteConfig={siteConfig}>
-      <div data-sb-object-id={page.__id}>
-        {renderContent(page.content)}
-        {renderForm(page.fields, page.submitLabel)}
-      </div>
+      <L.Wrapper data-sb-object-id={page.__id}>
+        <S.ContactSpacer />
+        <L.Grid>
+          <S.PageContent>
+            {renderContent(page.content)}
+            {renderForm(page.fields, page.submitLabel)}
+          </S.PageContent>
+        </L.Grid>
+      </L.Wrapper>
     </PageLayout>
   );
 };
@@ -16,7 +24,11 @@ const renderContent = (content) => {
   if (!content) {
     return null;
   }
-  return <Markdown data-sb-field-path=".content">{content}</Markdown>;
+  return (
+    <S.ContactSection>
+      <MarkdownContent data-sb-field-path=".content">{content}</MarkdownContent>
+    </S.ContactSection>
+  );
 };
 
 const renderForm = (fields, submitLabel = 'Submit') => {
@@ -24,45 +36,13 @@ const renderForm = (fields, submitLabel = 'Submit') => {
     return null;
   }
   return (
-    <form action="#">
-      <div data-sb-field-path=".fields">
-        {fields.map((field, index) => (
-          <div
-            key={index}
-            data-sb-field-path={`.[${index}] .[${index}].type#text()[1]`}
-          >
-            <label htmlFor={field.name} data-sb-field-path=".label">
-              {field.label}
-            </label>
-            {renderFormControl(field)}
-          </div>
-        ))}
-      </div>
-
-      <button data-sb-field-path=".submitLabel">{submitLabel}</button>
-    </form>
-  );
-};
-
-const renderFormControl = (field) => {
-  if (field.type === 'text') {
-    return (
-      <textarea
-        name={field.name}
-        id={field.id}
-        required={field.required}
-        data-sb-field-path={`.name#@name .name#@id`}
-      ></textarea>
-    );
-  }
-  return (
-    <input
-      type={field.type}
-      name={field.name}
-      id={field.id}
-      required={field.required}
-      data-sb-field-path={`.name#@name .name#@id`}
-    />
+    <S.ContactSection>
+      <Form
+        fields={fields}
+        submitLabel={submitLabel}
+        annotationPrefix=".fields"
+      />
+    </S.ContactSection>
   );
 };
 

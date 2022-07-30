@@ -17,6 +17,11 @@ export const Grid = styled.div`
   grid-template-columns: repeat(var(--grid-columns), 1fr);
   column-gap: 2rem;
 
+  @media (min-width: 720px) {
+    --grid-columns: 8;
+    column-gap: 3rem;
+  }
+
   @media (min-width: 1024px) {
     --grid-columns: 12;
     column-gap: 3rem;

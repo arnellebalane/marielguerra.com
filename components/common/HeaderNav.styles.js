@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import icNavLinkArrow from '../../static/images/ic-navlink-arrow.svg';
 
-export const Nav = styled.nav``;
-
 export const NavToggle = styled.button`
   display: inline-block;
   width: 3rem;
