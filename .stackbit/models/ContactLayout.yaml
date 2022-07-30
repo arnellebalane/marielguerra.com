@@ -1,6 +1,6 @@
 type: page
 name: ContactLayout
-label: Contact Layout
+label: Contact Page
 layout: ContactLayout
 hideContent: true
 fields:
