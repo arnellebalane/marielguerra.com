@@ -4,5 +4,12 @@
     "description": "Documentary",
     "bgColor": "#C1D279",
     "textColor": "#180005",
-    "tags": []
+    "tags": [
+        "documentary"
+    ],
+    "thumbnail": {
+        "type": "Image",
+        "altText": "Replace this alternate text",
+        "url": "/images/Everylasting Hope.png"
+    }
 }
