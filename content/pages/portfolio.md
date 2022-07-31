@@ -27,10 +27,5 @@ content: >
 
   My post-production work involves editing, color correction and grading, sound
   design, subtitling, and animation using the following tools: Adobe Premiere
-  Pro, Adobe After Effects, DaVinci Resolve
-
-
-
-
-  Hello!
+  Pro, Adobe After Effects, and DaVinci Resolve
 ---
