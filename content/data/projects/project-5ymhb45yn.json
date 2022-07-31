@@ -4,5 +4,7 @@
     "description": "AVP, Testimonials",
     "bgColor": "#06869F",
     "textColor": "#FFFFFF",
-    "tags": []
+    "tags": [
+        "lorem-ipsum"
+    ]
 }
