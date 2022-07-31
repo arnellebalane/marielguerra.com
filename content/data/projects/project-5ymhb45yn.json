@@ -6,5 +6,9 @@
     "textColor": "#FFFFFF",
     "tags": [
         "documentary"
-    ]
+    ],
+    "thumbnail": {
+        "type": "Image",
+        "altText": "Replace this alternate text"
+    }
 }
