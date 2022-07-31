@@ -4,7 +4,9 @@
     "description": "Short Film",
     "bgColor": "#FFA858",
     "textColor": "#0C0A1B",
-    "tags": [],
+    "tags": [
+        "lorem-ipsum"
+    ],
     "thumbnail": {
         "type": "Image",
         "altText": "Replace this alternate text",
