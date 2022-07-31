@@ -15,7 +15,7 @@ sections:
     image:
       type: Image
       altText: Mariel Guerra
-      url: /images/avatar.png
+      url: /images/Profile pic.png
     background:
       type: Image
       altText: About hero background
