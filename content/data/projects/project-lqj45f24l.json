@@ -5,7 +5,8 @@
     "bgColor": "#A7A0FB",
     "textColor": "#180005",
     "tags": [
-        "animation"
+        "animation",
+        "lorem-ipsum"
     ],
     "thumbnail": {
         "type": "Image",
