@@ -19,3 +19,11 @@ fields:
     name: duration
     label: Duration
     required: true
+  - type: string
+    name: bgColor
+    label: Background color
+    required: true
+  - type: string
+    name: textColor
+    label: Text color
+    required: true

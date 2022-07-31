@@ -6,5 +6,7 @@
     },
     "title": "Graphic Design",
     "institution": "UV New School of Art & Design",
-    "duration": "2017-2018"
+    "duration": "2017-2018",
+    "bgColor": "#281D33",
+    "textColor": "#FECCFD"
 }

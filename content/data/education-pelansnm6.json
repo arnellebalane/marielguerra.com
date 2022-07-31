@@ -6,5 +6,7 @@
     },
     "title": "BS Biology",
     "institution": "Cebu Doctor's University",
-    "duration": "2013-2015"
+    "duration": "2013-2015",
+    "bgColor": "#FFA859",
+    "textColor": "#362B29"
 }

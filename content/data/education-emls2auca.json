@@ -6,5 +6,7 @@
     },
     "title": "Filmmaking",
     "institution": "Film & Media Arts International Academy",
-    "duration": "2019-2020"
+    "duration": "2019-2020",
+    "bgColor": "#C1D279",
+    "textColor": "#180005"
 }

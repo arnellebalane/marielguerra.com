@@ -9,6 +9,7 @@ const AboutStorySection = ({
   closingText,
   annotationPrefix = '',
 }) => {
+  return null;
   return (
     <section data-sb-field-path={annotationPrefix}>
       {workExperiences?.length > 0 && renderWorkExperiences(workExperiences)}
