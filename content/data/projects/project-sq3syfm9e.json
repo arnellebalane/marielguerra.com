@@ -4,5 +4,7 @@
     "description": "Marketing Collateral",
     "bgColor": "#FE474D",
     "textColor": "#0C0A1B",
-    "tags": []
+    "tags": [
+        "lorem-ipsum"
+    ]
 }
