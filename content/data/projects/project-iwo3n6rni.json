@@ -4,5 +4,7 @@
     "description": "Alegre Guitars Brand Video",
     "bgColor": "#2F604C",
     "textColor": "#FFF7EC",
-    "tags": []
+    "tags": [
+        "lorem-ipsum"
+    ]
 }
