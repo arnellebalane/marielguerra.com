@@ -11,8 +11,18 @@ const Project = ({
   tags,
   annotationPrefix = '',
 }) => {
+  const handleClick = () => {
+    if (video?.url) {
+      window.open(video.url);
+    }
+  };
+
   return (
-    <S.Project tabIndex={0} data-sb-field-path={annotationPrefix}>
+    <S.Project
+      tabIndex={0}
+      onClick={handleClick}
+      data-sb-field-path={annotationPrefix}
+    >
       {renderThumbnail(thumbnail)}
       <S.Details data-sc-text={textColor} data-sc-background={bgColor}>
         {renderTitle(title)}
