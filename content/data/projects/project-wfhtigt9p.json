@@ -7,5 +7,9 @@
     "tags": [
         "music video",
         "commercial"
-    ]
+    ],
+    "thumbnail": {
+        "type": "Image",
+        "altText": "Replace this alternate text"
+    }
 }
