@@ -2,24 +2,27 @@
 layout: AboutLayout
 sections:
   - type: AboutHeroSection
-    title: |+
-      # Everyone's got a story to tell. Here's **mine**.
+    content: |
+      # Everyone's got a story to tell.<br>Here's **mine**.
 
-    description: >
       I'm Mariel, a filmmaker and designer based in Cebu, Philippines.
-
 
       I work on projects related to post-production: video editing, color
       correction, color grading, as well as sound design, production design, web
       design, and graphic design.
-    image:
+    avatar:
       type: Image
       altText: Mariel Guerra
       url: /images/avatar.png
     background:
       type: Image
-      altText: About hero background
+      altText: Mariel Guerra Banner
       url: /images/about-banner.jpg
+    resume:
+      type: Link
+      label: Download my resume
+      url: >-
+        https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/Mariel+Guerra+Resume.pdf
   - type: AboutStorySection
     workExperiences:
       - content/data/work-experiences/workexperience-et8i7aj8x.json

@@ -2,8 +2,15 @@ import PageLayout from './PageLayout';
 import { getSection } from '../registry';
 
 const AboutLayout = ({ page, siteConfig }) => {
+  const isFirstSectionHero = page.sections?.[0].type === 'AboutHeroSection';
+
   return (
-    <PageLayout page={page} siteConfig={siteConfig} invertedHeader>
+    <PageLayout
+      page={page}
+      siteConfig={siteConfig}
+      invertedHeader={isFirstSectionHero}
+      overlapHeader={isFirstSectionHero}
+    >
       <div data-sb-object-id={page.__id}>
         {page.sections?.length > 0 &&
           page.sections.map((section, index) =>

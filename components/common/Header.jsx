@@ -9,11 +9,16 @@ const Header = ({
   navigationLinks,
   annotationPrefix = '',
   inverted = false,
+  overlap = false,
 }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <S.Header data-sb-field-path={annotationPrefix} data-sc-inverted={inverted}>
+    <S.Header
+      data-sb-field-path={annotationPrefix}
+      data-sc-inverted={inverted}
+      data-sc-overlap={overlap}
+    >
       <L.Wrapper>
         <S.HeaderContent>
           {renderHomeLink(homeLink, annotationPrefix)}

@@ -1,59 +1,90 @@
+import Link from 'next/link';
 import Image from 'next/image';
-import Markdown from 'markdown-to-jsx';
+import * as L from '../../styles/Layout.styles';
+import * as S from './AboutHeroSection.styles';
 
 const AboutHeroSection = ({
-  image,
-  title,
-  description,
+  avatar,
+  content,
   background,
+  resume,
   annotationPrefix,
 }) => {
   return (
-    <section
-      style={{ backgroundImage: renderBackground(background) }}
-      data-sb-field-path={annotationPrefix}
-    >
-      {renderImage(image)}
-      {renderTitle(title)}
-      {renderDescription(description)}
-    </section>
+    <S.Section data-sb-field-path={annotationPrefix}>
+      {renderBackground(background)}
+      <L.Wrapper>
+        <L.Grid>
+          <S.SectionContent>
+            {renderAvatar(avatar)}
+            {renderContent(content)}
+            {renderResume(resume)}
+          </S.SectionContent>
+        </L.Grid>
+      </L.Wrapper>
+    </S.Section>
   );
-};
-
-const renderImage = (image) => {
-  if (!image?.url) {
-    return null;
-  }
-  return (
-    <Image
-      src={image.url}
-      alt={image.altText}
-      width="132"
-      height="132"
-      data-sb-field-path={`.image.url#@src .image.altText#@alt`}
-    />
-  );
-};
-
-const renderTitle = (title) => {
-  if (!title) {
-    return null;
-  }
-  return <Markdown data-sb-field-path=".title">{title}</Markdown>;
-};
-
-const renderDescription = (description) => {
-  if (!description) {
-    return null;
-  }
-  return <Markdown data-sb-field-path=".description">{description}</Markdown>;
 };
 
 const renderBackground = (background) => {
   if (!background?.url) {
-    return 'none';
+    return <S.BackgroundPlaceholder />;
   }
-  return `url(${background.url})`;
+  return (
+    <S.BackgroundWrapper
+      data-sc-image={background.url}
+      data-sb-field-path=".background.url#@data-sc-image"
+    />
+  );
+};
+
+const renderAvatar = (avatar) => {
+  if (!avatar?.url) {
+    return null;
+  }
+  return (
+    <S.AvatarWrapper>
+      <Image
+        src={avatar.url}
+        alt={avatar.altText}
+        layout="fill"
+        objectFit="cover"
+        objectPosition="center center"
+        data-sb-field-path={`.avatar.url#@src .avatar.altText#@alt`}
+      />
+    </S.AvatarWrapper>
+  );
+};
+
+const renderContent = (content) => {
+  if (!content) {
+    return null;
+  }
+  return (
+    <S.MarkdownContent
+      options={{ forceWrapper: true }}
+      data-sb-field-path=".content"
+    >
+      {content}
+    </S.MarkdownContent>
+  );
+};
+
+const renderResume = (resume) => {
+  if (!resume?.url) {
+    return null;
+  }
+  return (
+    <S.ResumeWrapper>
+      <S.ResumeLink
+        href={resume.url}
+        download="Mariel Guerra Resume.pdf"
+        data-sb-field-path=".resume.url#@href .resume.label"
+      >
+        {resume.label}
+      </S.ResumeLink>
+    </S.ResumeWrapper>
+  );
 };
 
 export default AboutHeroSection;

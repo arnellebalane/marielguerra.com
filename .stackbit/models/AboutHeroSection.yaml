@@ -5,21 +5,22 @@ groups:
   - aboutSections
 fields:
   - type: model
-    name: image
-    label: Image
+    name: avatar
+    label: Avatar
     required: true
     models:
       - Image
   - type: markdown
-    name: title
-    label: Title
-    required: true
-  - type: markdown
-    name: description
-    label: Description
+    name: content
+    label: Content
     required: true
   - type: model
     name: background
     label: Background
     models:
       - Image
+  - type: model
+    name: resume
+    label: Resume
+    models:
+      - Link
