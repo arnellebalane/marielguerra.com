@@ -4,5 +4,7 @@
     "description": "Documentary",
     "bgColor": "#C1D279",
     "textColor": "#180005",
-    "tags": []
+    "tags": [
+        "lorem-ipsum"
+    ]
 }
