@@ -2,6 +2,6 @@
 layout: HomeLayout
 title: Mariel Guerra
 link:
-  label: Check my work
+  label: See my works
   url: /portfolio/
 ---
