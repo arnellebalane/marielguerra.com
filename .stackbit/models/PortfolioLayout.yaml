@@ -8,6 +8,11 @@ fields:
     name: content
     label: Content
     required: true
+  - type: model
+    name: reel
+    label: Reel video
+    models:
+      - Video
   - type: list
     name: projects
     label: Projects

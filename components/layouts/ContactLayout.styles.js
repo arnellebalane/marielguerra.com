@@ -13,11 +13,11 @@ export const PageContent = styled.div`
 `;
 
 export const PageSection = styled.div`
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
 
   @media (min-width: 720px) {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
   }
 `;

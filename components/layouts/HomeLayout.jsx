@@ -47,6 +47,7 @@ const renderBackground = (background) => {
           autoPlay
           loop
           muted
+          playsInline
         ></S.BackgroundVideo>
       </S.BackgroundWrapper>
     );

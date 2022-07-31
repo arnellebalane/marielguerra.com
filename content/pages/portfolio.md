@@ -28,4 +28,9 @@ content: >
   My post-production work involves editing, color correction and grading, sound
   design, subtitling, and animation using the following tools: Adobe Premiere
   Pro, Adobe After Effects, and DaVinci Resolve
+reel:
+  type: Video
+  title: Mariel Guerra Reel
+  url: >-
+    https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/Mariel+Guerra+Reel.mp4
 ---

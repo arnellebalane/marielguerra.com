@@ -12,6 +12,7 @@ const PortfolioLayout = ({ page, siteConfig }) => {
         <L.Grid>
           <S.PageContent data-sb-object-id={page.__id}>
             {renderContent(page.content)}
+            {renderReel(page.reel)}
             {renderProjects(page.projects)}
           </S.PageContent>
         </L.Grid>
@@ -28,6 +29,25 @@ const renderContent = (content) => {
   return (
     <S.PageSection>
       <MarkdownContent data-sb-field-path=".content">{content}</MarkdownContent>
+    </S.PageSection>
+  );
+};
+
+const renderReel = (reel) => {
+  if (!reel?.url) {
+    return null;
+  }
+  return (
+    <S.PageSection>
+      <S.ReelWrapper>
+        <S.Video
+          src={reel.url}
+          title={reel.title}
+          controls
+          playsInline
+          data-sb-field-path=".reel.url#@src .reel.title#@title"
+        />
+      </S.ReelWrapper>
     </S.PageSection>
   );
 };

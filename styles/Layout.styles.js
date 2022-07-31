@@ -1,9 +1,11 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Wrapper = styled.div`
+  --wrapper-margin: 2.4rem;
+
   display: block;
   width: 100%;
-  max-width: calc(100vw - 4.8rem);
+  max-width: calc(100vw - (var(--wrapper-margin) * 2));
   margin: 0 auto;
 
   @media (min-width: 1488px) {
@@ -12,7 +14,7 @@ export const Wrapper = styled.div`
 `;
 
 export const GridProperties = styled.div`
-  --grid-size: calc(100vw - 4.8rem);
+  --grid-size: calc(100vw - (var(--wrapper-margin) * 2));
   --grid-columns: 4;
   --grid-gap-size: 2rem;
   --grid-column-size: calc(
