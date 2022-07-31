@@ -9,6 +9,7 @@
     ],
     "thumbnail": {
         "type": "Image",
-        "altText": "Replace this alternate text"
+        "altText": "Replace this alternate text",
+        "url": "/images/Mr39.png"
     }
 }
