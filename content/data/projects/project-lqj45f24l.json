@@ -4,5 +4,7 @@
     "description": "Animation",
     "bgColor": "#A7A0FB",
     "textColor": "#180005",
-    "tags": []
+    "tags": [
+        "lorem-ipsum"
+    ]
 }
