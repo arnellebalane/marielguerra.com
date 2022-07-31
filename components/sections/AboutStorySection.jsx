@@ -1,6 +1,8 @@
 import Markdown from 'markdown-to-jsx';
 import ImageGallery from '../common/ImageGallery';
 import WorkExperience from '../common/WorkExperience';
+import * as L from '../../styles/Layout.styles';
+import * as S from './AboutStorySection.styles';
 
 const AboutStorySection = ({
   workExperiences,
@@ -9,59 +11,114 @@ const AboutStorySection = ({
   closingText,
   annotationPrefix = '',
 }) => {
-  return null;
   return (
-    <section data-sb-field-path={annotationPrefix}>
-      {workExperiences?.length > 0 && renderWorkExperiences(workExperiences)}
-      {content?.length > 0 && renderContent(content)}
-      {galleries?.length > 0 && renderGalleries(galleries)}
-      {closingText && renderClosingText(closingText)}
-    </section>
+    <S.Section data-sb-field-path={annotationPrefix}>
+      <L.Wrapper>
+        <L.GridProperties>
+          <S.MobileLayout>
+            {renderContent(content, 0)}
+            {renderWorkExperience(workExperiences, 0)}
+            {renderContent(content, 1)}
+            {renderWorkExperience(workExperiences, 1)}
+            {renderWorkExperience(workExperiences, 2)}
+            {renderGallery(galleries, 0)}
+            {renderContent(content, 2)}
+            {renderWorkExperience(workExperiences, 3)}
+            {renderGallery(galleries, 1)}
+            {renderContent(content, 3)}
+            {renderWorkExperience(workExperiences, 4)}
+            {renderGallery(galleries, 2)}
+            {renderClosingText(closingText)}
+          </S.MobileLayout>
+
+          <S.DesktopLayout>
+            <div>
+              {renderContent(content, 0)}
+              {renderWorkExperience(workExperiences, 1)}
+              {renderWorkExperience(workExperiences, 2)}
+              {renderWorkExperience(workExperiences, 3)}
+              {renderContent(content, 3)}
+              {renderGallery(galleries, 1)}
+              {renderClosingText(closingText)}
+            </div>
+            <div>
+              {renderWorkExperience(workExperiences, 0)}
+              {renderContent(content, 1)}
+              {renderGallery(galleries, 0)}
+              {renderContent(content, 2)}
+              {renderWorkExperience(workExperiences, 4)}
+              {renderGallery(galleries, 2)}
+            </div>
+          </S.DesktopLayout>
+        </L.GridProperties>
+      </L.Wrapper>
+    </S.Section>
   );
 };
 
-const renderWorkExperiences = (workExperiences) => {
+const renderContent = (contents, index) => {
+  const content = contents[index];
+  if (!content) {
+    return (
+      <S.ContentPlaceholder
+        data-sc-index={index}
+        data-sb-field-path={`.content.[${index}]`}
+      />
+    );
+  }
   return (
-    <div data-sb-field-path=".workExperiences">
-      {workExperiences.map((workExperience, index) => (
-        <WorkExperience
-          key={index}
-          annotationPrefix={`.[${index}]`}
-          {...workExperience}
-        />
-      ))}
-    </div>
+    <S.ContentWrapper data-sc-index={index}>
+      <Markdown data-sb-field-path={`.content.[${index}]`}>{content}</Markdown>
+    </S.ContentWrapper>
   );
 };
 
-const renderContent = (content) => {
+const renderWorkExperience = (workExperiences, index) => {
+  const workExperience = workExperiences[index];
+  if (!workExperience) {
+    return (
+      <S.WorkExperiencePlaceholder
+        data-sc-index={index}
+        data-sb-field-path={`.workExperiences.[${index}]`}
+      />
+    );
+  }
   return (
-    <div data-sb-field-path=".content">
-      {content.map((content, index) => (
-        <div key={index} data-sb-field-path={`.[${index}]`}>
-          <Markdown>{content}</Markdown>
-        </div>
-      ))}
-    </div>
+    <S.WorkExperienceWrapper data-sc-index={index}>
+      <WorkExperience
+        annotationPrefix={`.workExperiences.[${index}]`}
+        {...workExperience}
+      />
+    </S.WorkExperienceWrapper>
   );
 };
 
-const renderGalleries = (galleries) => {
+const renderGallery = (galleries, index) => {
+  const gallery = galleries[index];
+  if (!gallery) {
+    return (
+      <S.GalleryPlaceholder
+        data-sc-index={index}
+        data-sb-field-path={`.galleries.[${index}]`}
+      />
+    );
+  }
   return (
-    <div data-sb-field-path=".galleries">
-      {galleries.map((gallery, index) => (
-        <ImageGallery
-          key={index}
-          annotationPrefix={`.[${index}]`}
-          {...gallery}
-        />
-      ))}
-    </div>
+    <S.GalleryWrapper data-sc-index={index}>
+      <ImageGallery annotationPrefix={`.galleries.[${index}]`} {...gallery} />
+    </S.GalleryWrapper>
   );
 };
 
 const renderClosingText = (closingText) => {
-  return <h3 data-sb-field-path=".closingText">{closingText}</h3>;
+  if (!closingText) {
+    return null;
+  }
+  return (
+    <S.ClosingText data-sb-field-path=".closingText">
+      {closingText}
+    </S.ClosingText>
+  );
 };
 
 export default AboutStorySection;

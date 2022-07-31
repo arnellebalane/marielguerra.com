@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import * as S from './WorkExperience.styles';
 
 const WorkExperience = ({
   thumbnail,
@@ -10,12 +11,12 @@ const WorkExperience = ({
   annotationPrefix = '',
 }) => {
   return (
-    <article data-sb-field-path={annotationPrefix}>
+    <S.WorkExperience data-sb-field-path={annotationPrefix}>
       {renderThumbnail(thumbnail)}
       {renderTitleAndCompany(title, company)}
       {renderDurationAndLocation(duration, location)}
       {renderDescription(description)}
-    </article>
+    </S.WorkExperience>
   );
 };
 
@@ -24,20 +25,16 @@ const renderThumbnail = (thumbnail) => {
     return null;
   }
   return (
-    <div
-      style={{
-        position: 'relative',
-        width: '500px',
-        aspectRatio: '16 / 9',
-      }}
-    >
+    <S.ThumbnailWrapper>
       <Image
         src={thumbnail.url}
         alt={thumbnail.altText}
         layout="fill"
+        objectFit="cover"
+        objectPosition="center center"
         data-sb-field-path=".thumbnail.url#@src .thumbnail.altText#@alt"
       />
-    </div>
+    </S.ThumbnailWrapper>
   );
 };
 
@@ -46,11 +43,11 @@ const renderTitleAndCompany = (title, company) => {
     return null;
   }
   return (
-    <h2>
-      {title && <span data-sb-field-path=".title">{title}</span>}
+    <S.TitleAndCompany>
+      {title && <S.Title data-sb-field-path=".title">{title}</S.Title>}
       {title && company && ', '}
       {company && <span data-sb-field-path=".company">{company}</span>}
-    </h2>
+    </S.TitleAndCompany>
   );
 };
 
@@ -59,11 +56,11 @@ const renderDurationAndLocation = (duration, location) => {
     return null;
   }
   return (
-    <p>
+    <S.DurationAndLocation>
       {duration && <span data-sb-field-path=".duration">{duration}</span>}
       {duration && location && ' | '}
       {location && <span data-sb-field-path=".location">{location}</span>}
-    </p>
+    </S.DurationAndLocation>
   );
 };
 
@@ -72,13 +69,13 @@ const renderDescription = (description) => {
     return null;
   }
   return (
-    <ul data-sb-field-path=".description">
+    <S.DescriptionList data-sb-field-path=".description">
       {description.map((desc, index) => (
-        <li key={index} data-sb-field-path={`.[${index}]`}>
+        <S.Description key={index} data-sb-field-path={`.[${index}]`}>
           {desc}
-        </li>
+        </S.Description>
       ))}
-    </ul>
+    </S.DescriptionList>
   );
 };
 

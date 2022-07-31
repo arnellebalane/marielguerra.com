@@ -12,10 +12,11 @@ export const Wrapper = styled.div`
 `;
 
 export const GridProperties = styled.div`
+  --grid-size: calc(100vw - 4.8rem);
   --grid-columns: 4;
   --grid-gap-size: 2rem;
   --grid-column-size: calc(
-    (100% - ((var(--grid-columns) - 1) * var(--grid-gap-size))) /
+    (var(--grid-size) - ((var(--grid-columns) - 1) * var(--grid-gap-size))) /
       var(--grid-columns)
   );
 
@@ -26,6 +27,10 @@ export const GridProperties = styled.div`
 
   @media (min-width: 1024px) {
     --grid-columns: 12;
+  }
+
+  @media (min-width: 1488px) {
+    --grid-size: 144rem;
   }
 `;
 

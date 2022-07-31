@@ -14,7 +14,7 @@ export const BackgroundWrapper = styled.div`
   position: relative;
   aspect-ratio: 420 / 240;
 
-  background: var(--complementary) top center no-repeat;
+  background: var(--inverted) top center no-repeat;
   background-image: url(${(props) => props['data-sc-image']});
   background-size: cover;
 
