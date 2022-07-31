@@ -8,5 +8,9 @@
         "documentary",
         "film",
         "documentary"
-    ]
+    ],
+    "thumbnail": {
+        "type": "Image",
+        "altText": "Replace this alternate text"
+    }
 }
