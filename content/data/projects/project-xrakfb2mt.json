@@ -6,5 +6,9 @@
     "textColor": "#FFE7BE",
     "tags": [
         "TV"
-    ]
+    ],
+    "thumbnail": {
+        "type": "Image",
+        "altText": "Replace this alternate text"
+    }
 }
