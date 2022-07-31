@@ -4,5 +4,9 @@
     "description": "Short Film",
     "bgColor": "#FF1F2A",
     "textColor": "#F4EEEA",
-    "tags": []
+    "tags": [],
+    "thumbnail": {
+        "type": "Image",
+        "altText": "Replace this alternate text"
+    }
 }
