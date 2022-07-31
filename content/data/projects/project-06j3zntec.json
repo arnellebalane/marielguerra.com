@@ -4,5 +4,12 @@
     "description": "Music Video",
     "bgColor": "#64AC7A",
     "textColor": "#180005",
-    "tags": []
+    "tags": [
+        "music video"
+    ],
+    "thumbnail": {
+        "type": "Image",
+        "altText": "Replace this alternate text",
+        "url": "/images/I Don_t Miss You at All.png"
+    }
 }

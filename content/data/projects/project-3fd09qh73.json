@@ -4,5 +4,12 @@
     "description": "Short Film",
     "bgColor": "#FE474D",
     "textColor": "#0C0A1B",
-    "tags": []
+    "tags": [
+        "film"
+    ],
+    "thumbnail": {
+        "type": "Image",
+        "altText": "Replace this alternate text",
+        "url": "/images/Sorry I_m Late.png"
+    }
 }

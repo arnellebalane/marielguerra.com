@@ -7,5 +7,10 @@
     "tags": [
         "documentary",
         "film"
-    ]
+    ],
+    "thumbnail": {
+        "type": "Image",
+        "altText": "Replace this alternate text",
+        "url": "/images/Dagum.png"
+    }
 }

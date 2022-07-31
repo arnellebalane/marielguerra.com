@@ -4,5 +4,12 @@
     "description": "Art Exhibition Teaser Video",
     "bgColor": "#FFA858",
     "textColor": "#0C0A1B",
-    "tags": []
+    "tags": [
+        "commercial"
+    ],
+    "thumbnail": {
+        "type": "Image",
+        "altText": "Replace this alternate text",
+        "url": "/images/We Come In Peace Banner.png"
+    }
 }

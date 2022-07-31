@@ -4,5 +4,13 @@
     "description": "Animation",
     "bgColor": "#A7A0FB",
     "textColor": "#180005",
-    "tags": []
+    "tags": [
+        "animation",
+        "music video"
+    ],
+    "thumbnail": {
+        "type": "Image",
+        "altText": "Replace this alternate text",
+        "url": "/images/Mr39.png"
+    }
 }
