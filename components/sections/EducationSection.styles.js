@@ -19,13 +19,14 @@ export const Title = styled.h2`
   margin-bottom: 3rem;
 
   font-family: var(--font-primary);
-  font-size: 6rem;
+  font-size: 4.2rem;
   font-weight: 700;
   line-height: 1.6;
   word-break: break-all;
   color: var(--fg-complementary);
 
   @media (min-width: 720px) {
+    font-size: 6rem;
     text-align: center;
   }
 `;

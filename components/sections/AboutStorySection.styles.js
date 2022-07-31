@@ -307,12 +307,15 @@ export const ClosingText = styled.h3`
   font-weight: 500;
   line-height: 1.5;
   text-transform: uppercase;
-  word-break: break-all;
 
   @media (min-width: 1024px) {
-    font-size: 5.4rem;
+    font-size: 4.8rem;
     text-align: right;
 
     padding-left: calc(var(--grid-column-size) + var(--grid-gap-size));
+  }
+
+  @media (min-width: 1488px) {
+    font-size: 5.4rem;
   }
 `;

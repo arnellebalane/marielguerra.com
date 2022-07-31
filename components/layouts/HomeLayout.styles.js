@@ -5,6 +5,8 @@ export const PageWrapper = styled.div`
   flex-grow: 1;
   display: flex;
   position: relative;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
 
   color: var(--fg-inverted);
   background-color: var(--inverted);
