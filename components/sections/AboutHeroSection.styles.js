@@ -10,6 +10,33 @@ export const Section = styled.section`
   }
 `;
 
+export const Line = styled.div`
+  position: absolute;
+  left: calc(50% - 0.1rem);
+  z-index: 1;
+  width: 0.2rem;
+  background-color: var(--inverted);
+
+  &[data-sc-index='0'] {
+    height: 0;
+
+    @media (min-width: 720px) {
+      height: 14.5rem;
+      top: 0;
+    }
+  }
+
+  &[data-sc-index='1'] {
+    height: 8rem;
+    bottom: 0;
+
+    @media (min-width: 720px) {
+      height: 14rem;
+      bottom: 6rem;
+    }
+  }
+`;
+
 export const BackgroundWrapper = styled.div`
   position: relative;
   aspect-ratio: 420 / 240;

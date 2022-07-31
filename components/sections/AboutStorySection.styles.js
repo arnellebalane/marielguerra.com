@@ -1,11 +1,75 @@
 import styled, { css } from 'styled-components';
 
 export const Section = styled.section`
-  padding-top: 6rem;
-  padding-bottom: 21rem;
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
 
   @media (min-width: 720px) {
+    padding-top: 0;
     padding-bottom: 12rem;
+
+    &:not(:first-child) {
+      margin-top: -10rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    &:not(:first-child) {
+      margin-top: -14rem;
+    }
+  }
+`;
+
+export const Line = styled.div`
+  margin: 0 auto;
+  width: 0.2rem;
+  background-color: var(--inverted);
+
+  &[data-sc-index='0'] {
+    height: 8rem;
+  }
+
+  &[data-sc-index='1'] {
+    height: 8rem;
+    margin-bottom: 4rem;
+  }
+
+  &[data-sc-index='2'] {
+    height: 8rem;
+    margin-top: 5rem;
+  }
+
+  @media (min-width: 720px) {
+    --line-length: calc((100% - (25rem + 25rem + 25rem + 6rem)) / 3);
+
+    position: absolute;
+    left: calc(50% - 0.1rem);
+    z-index: 1;
+
+    &[data-sc-index] {
+      height: var(--line-length);
+      margin: 0;
+    }
+
+    &[data-sc-index='0'] {
+      top: 25rem;
+
+      ${Section}:not(:first-child) & {
+        top: 38rem;
+        height: calc(var(--line-length) - 14rem);
+      }
+    }
+
+    &[data-sc-index='1'] {
+      top: calc(25rem + var(--line-length) + 25rem);
+    }
+
+    &[data-sc-index='2'] {
+      top: calc(
+        25rem + var(--line-length) + 25rem + var(--line-length) + 25rem
+      );
+    }
   }
 `;
 
@@ -243,6 +307,7 @@ export const ClosingText = styled.h3`
   font-weight: 500;
   line-height: 1.5;
   text-transform: uppercase;
+  word-break: break-all;
 
   @media (min-width: 1024px) {
     font-size: 5.4rem;

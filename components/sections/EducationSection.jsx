@@ -9,7 +9,6 @@ const EducationSection = ({
   link,
   annotationPrefix = '',
 }) => {
-  return null;
   return (
     <S.Section data-sb-field-path={annotationPrefix}>
       <L.Wrapper>

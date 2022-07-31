@@ -18,6 +18,7 @@ const AboutStorySection = ({
           <S.MobileLayout>
             {renderContent(content, 0)}
             {renderWorkExperience(workExperiences, 0)}
+            <S.Line data-sc-index="0" />
             {renderContent(content, 1)}
             {renderWorkExperience(workExperiences, 1)}
             {renderWorkExperience(workExperiences, 2)}
@@ -25,13 +26,19 @@ const AboutStorySection = ({
             {renderContent(content, 2)}
             {renderWorkExperience(workExperiences, 3)}
             {renderGallery(galleries, 1)}
+            <S.Line data-sc-index="1" />
             {renderContent(content, 3)}
             {renderWorkExperience(workExperiences, 4)}
             {renderGallery(galleries, 2)}
             {renderClosingText(closingText)}
+            <S.Line data-sc-index="2" />
           </S.MobileLayout>
 
           <S.DesktopLayout>
+            <S.Line data-sc-index="0" />
+            <S.Line data-sc-index="1" />
+            <S.Line data-sc-index="2" />
+
             <div>
               {renderContent(content, 0)}
               {renderWorkExperience(workExperiences, 1)}

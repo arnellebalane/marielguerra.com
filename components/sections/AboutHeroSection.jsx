@@ -12,6 +12,9 @@ const AboutHeroSection = ({
 }) => {
   return (
     <S.Section data-sb-field-path={annotationPrefix}>
+      <S.Line data-sc-index="0" />
+      <S.Line data-sc-index="1" />
+
       {renderBackground(background)}
       <L.Wrapper>
         <L.Grid>
