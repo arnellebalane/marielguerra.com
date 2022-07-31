@@ -4,5 +4,7 @@
     "description": "Music Video",
     "bgColor": "#64AC7A",
     "textColor": "#180005",
-    "tags": []
+    "tags": [
+        "lorem-ipsum"
+    ]
 }
