@@ -4,5 +4,7 @@
     "description": "Season 9 Episode 4: Wildlife Treasures",
     "bgColor": "#3C4299",
     "textColor": "#EDE6E8",
-    "tags": []
+    "tags": [
+        "lorem-ipsum"
+    ]
 }
