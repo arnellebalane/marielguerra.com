@@ -3,6 +3,12 @@ import icMenu from '../../static/images/ic-menu.svg';
 import icClose from '../../static/images/ic-close.svg';
 import icNavLinkArrow from '../../static/images/ic-navlink-arrow.svg';
 
+export const Nav = styled.nav`
+  @media (min-width: 1024px) {
+    margin-right: calc(var(--grid-column-size) + var(--grid-gap-size));
+  }
+`;
+
 export const NavToggle = styled.button`
   display: inline-block;
   width: 2rem;

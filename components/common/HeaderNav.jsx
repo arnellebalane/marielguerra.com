@@ -23,7 +23,7 @@ const HeaderNav = ({ links, open, onToggle, annotationPrefix = '' }) => {
   }
 
   return (
-    <nav>
+    <S.Nav>
       <S.NavToggle data-sc-open={open} onClick={handleToggle}>
         Toggle Menu
       </S.NavToggle>
@@ -39,7 +39,7 @@ const HeaderNav = ({ links, open, onToggle, annotationPrefix = '' }) => {
           </Link>
         ))}
       </S.NavContent>
-    </nav>
+    </S.Nav>
   );
 };
 

@@ -20,14 +20,16 @@ const Header = ({
       data-sc-overlap={overlap}
     >
       <L.Wrapper>
-        <S.HeaderContent>
-          {renderHomeLink(homeLink, annotationPrefix)}
-          <HeaderNav
-            links={navigationLinks}
-            open={isNavOpen}
-            onToggle={setIsNavOpen}
-          />
-        </S.HeaderContent>
+        <L.GridProperties>
+          <S.HeaderContent>
+            {renderHomeLink(homeLink, annotationPrefix)}
+            <HeaderNav
+              links={navigationLinks}
+              open={isNavOpen}
+              onToggle={setIsNavOpen}
+            />
+          </S.HeaderContent>
+        </L.GridProperties>
       </L.Wrapper>
     </S.Header>
   );

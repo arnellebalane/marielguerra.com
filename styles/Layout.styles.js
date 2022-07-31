@@ -11,22 +11,28 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Grid = styled.div`
+export const GridProperties = styled.div`
   --grid-columns: 4;
-
-  display: grid;
-  grid-template-columns: repeat(var(--grid-columns), 1fr);
-  gap: 2rem;
+  --grid-gap-size: 2rem;
+  --grid-column-size: calc(
+    (100% - ((var(--grid-columns) - 1) * var(--grid-gap-size))) /
+      var(--grid-columns)
+  );
 
   @media (min-width: 720px) {
     --grid-columns: 8;
-    gap: 3rem;
+    --grid-gap-size: 3rem;
   }
 
   @media (min-width: 1024px) {
     --grid-columns: 12;
-    gap: 3rem;
   }
+`;
+
+export const Grid = styled(GridProperties)`
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), 1fr);
+  gap: var(--grid-gap-size);
 `;
 
 export const Spacer = styled.div`
