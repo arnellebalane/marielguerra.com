@@ -11,5 +11,10 @@
         "type": "Image",
         "altText": "Replace this alternate text",
         "url": "/images/We Come In Peace Banner.png"
+    },
+    "video": {
+        "type": "Video",
+        "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects/We+Come+In+Peace.mp4",
+        "title": "We Come In Peace"
     }
 }

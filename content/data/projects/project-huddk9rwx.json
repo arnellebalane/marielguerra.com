@@ -11,5 +11,10 @@
         "type": "Image",
         "altText": "Replace this alternate text",
         "url": "/images/Samsung.jpg"
+    },
+    "video": {
+        "type": "Video",
+        "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects/Samsung+Galaxy+Tab+S8.mp4",
+        "title": "Samsung Galaxy Tab S8"
     }
 }

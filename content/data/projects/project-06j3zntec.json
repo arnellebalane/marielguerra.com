@@ -11,5 +11,10 @@
         "type": "Image",
         "altText": "Replace this alternate text",
         "url": "/images/I Don_t Miss You at All.png"
+    },
+    "video": {
+        "type": "Video",
+        "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects/I+Dont+Miss+You+At+All.mp4",
+        "title": "I Don't Miss You At All"
     }
 }

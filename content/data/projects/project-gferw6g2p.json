@@ -11,5 +11,10 @@
         "type": "Image",
         "altText": "Replace this alternate text",
         "url": "/images/Dindikan.png"
+    },
+    "video": {
+        "type": "Video",
+        "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects/Dindikan.mp4",
+        "title": "Dindikan"
     }
 }

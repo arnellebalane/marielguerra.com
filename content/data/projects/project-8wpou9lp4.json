@@ -11,5 +11,10 @@
         "type": "Image",
         "altText": "Replace this alternate text",
         "url": "/images/BE.png"
+    },
+    "video": {
+        "type": "Video",
+        "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects/BE+Residences.mp4",
+        "title": "BE Residences"
     }
 }

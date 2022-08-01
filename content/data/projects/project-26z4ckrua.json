@@ -11,5 +11,10 @@
         "type": "Image",
         "altText": "The Lemon Co.",
         "url": "/images/project-the-lemon-co.png"
+    },
+    "video": {
+        "type": "Video",
+        "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects/The+Lemon+Co.mp4",
+        "title": "The Lemon Co."
     }
 }
