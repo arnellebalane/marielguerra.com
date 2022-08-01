@@ -11,5 +11,10 @@
         "type": "Image",
         "altText": "Replace this alternate text",
         "url": "/images/Inahan.png"
+    },
+    "video": {
+        "type": "Video",
+        "url": "lorem-ipsum",
+        "title": "Replace this with the video title"
     }
 }
