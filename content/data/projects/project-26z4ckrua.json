@@ -11,5 +11,10 @@
         "type": "Image",
         "altText": "The Lemon Co.",
         "url": "/images/project-the-lemon-co.png"
+    },
+    "video": {
+        "type": "Video",
+        "url": "lorem-ipsum",
+        "title": "Replace this with the video title"
     }
 }
