@@ -11,5 +11,10 @@
         "type": "Image",
         "altText": "Replace this alternate text",
         "url": "/images/FISH-32d07aac.png"
+    },
+    "video": {
+        "type": "Video",
+        "url": "lorem-ipsum",
+        "title": "Replace this with the video title"
     }
 }
