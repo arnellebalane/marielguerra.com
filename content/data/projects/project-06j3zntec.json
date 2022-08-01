@@ -11,5 +11,10 @@
         "type": "Image",
         "altText": "Replace this alternate text",
         "url": "/images/I Don_t Miss You at All.png"
+    },
+    "video": {
+        "type": "Video",
+        "url": "lorem-ipsum",
+        "title": "Replace this with the video title"
     }
 }
