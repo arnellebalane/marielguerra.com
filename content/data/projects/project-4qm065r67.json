@@ -15,7 +15,7 @@
     },
     "video": {
         "type": "Video",
-        "url": "lorem-ipsum",
+        "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects/Dagum.mp4",
         "title": "Replace this with the video title"
     }
 }
