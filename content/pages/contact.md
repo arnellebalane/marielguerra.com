@@ -26,4 +26,6 @@ fields:
 submitLabel: Submit
 submissionSubject: Someone contacted you from marielguerra.com
 successMessage: Form submitted successfully.
+metaTitle: Contact | Mariel Guerra
+metaDescription: Collaborate with Mariel Guerra
 ---

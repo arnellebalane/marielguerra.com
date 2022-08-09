@@ -1,8 +1,14 @@
+import SEO from '../components/common/SEO';
 import LayoutComponent from '../components/LayoutComponent';
 import { pagesWithLayout, siteConfig, urlToContent } from '../utils/content';
 
 const DynamicPage = ({ page, siteConfig }) => {
-  return <LayoutComponent page={page} siteConfig={siteConfig} />;
+  return (
+    <>
+      <SEO page={page} />
+      <LayoutComponent page={page} siteConfig={siteConfig} />
+    </>
+  );
 };
 
 export default DynamicPage;
