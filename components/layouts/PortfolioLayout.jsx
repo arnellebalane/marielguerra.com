@@ -4,9 +4,9 @@ import ProjectsFeed from '../common/ProjectsFeed';
 import * as L from '../../styles/Layout.styles';
 import * as S from './PortfolioLayout.styles';
 
-const PortfolioLayout = ({ page, siteConfig }) => {
+const PortfolioLayout = ({ page, siteConfig, themeStyle }) => {
   return (
-    <PageLayout page={page} siteConfig={siteConfig}>
+    <PageLayout page={page} siteConfig={siteConfig} themeStyle={themeStyle}>
       <L.Wrapper>
         <L.Spacer />
         <L.Grid>

@@ -1,0 +1,36 @@
+type: data
+name: ThemeStyle
+label: Theme Style
+file: style.json
+fieldGroups:
+  - name: color-palettes
+    label: Color Palettes
+fields:
+  - type: color
+    name: bg-body
+    label: Body background
+    group: color-palettes
+  - type: color
+    name: primary
+    label: Primary
+    group: color-palettes
+  - type: color
+    name: fg-primary
+    label: Primary foreground
+    group: color-palettes
+  - type: color
+    name: inverted
+    label: Inverted
+    group: color-palettes
+  - type: color
+    name: fg-inverted
+    label: Inverted foreground
+    group: color-palettes
+  - type: color
+    name: complementary
+    label: Complementary
+    group: color-palettes
+  - type: color
+    name: fg-complementary
+    label: Complementary foreground
+    group: color-palettes

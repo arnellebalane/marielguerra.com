@@ -1,11 +1,12 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
+import ThemedLayout from './ThemedLayout';
 import * as S from './HomeLayout.styles';
 
-const HomeLayout = ({ page }) => {
+const HomeLayout = ({ page, themeStyle }) => {
   return (
-    <>
+    <ThemedLayout themeStyle={themeStyle}>
       <Head>
         <meta name="theme-color" content="#000000" />
       </Head>
@@ -18,7 +19,7 @@ const HomeLayout = ({ page }) => {
           {renderLink(page.link)}
         </S.PageContent>
       </S.PageWrapper>
-    </>
+    </ThemedLayout>
   );
 };
 

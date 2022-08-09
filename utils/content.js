@@ -9,6 +9,7 @@ if (!sbConfig.pagesDir || !sbConfig.dataDir)
   throw new Error('Invalid Stackbit config file');
 
 export const siteConfigFile = sbConfig.dataDir + '/config.json';
+export const themeStyleFile = sbConfig.dataDir + '/style.json';
 
 const supportedFileTypes = ['md', 'json'];
 
@@ -109,4 +110,8 @@ export function pagesWithLayout() {
 
 export function siteConfig() {
   return readContent(siteConfigFile);
+}
+
+export function themeStyle() {
+  return readContent(themeStyleFile);
 }

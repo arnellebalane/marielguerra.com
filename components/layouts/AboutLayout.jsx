@@ -1,13 +1,14 @@
 import PageLayout from './PageLayout';
 import { getSection } from '../registry';
 
-const AboutLayout = ({ page, siteConfig }) => {
+const AboutLayout = ({ page, siteConfig, themeStyle }) => {
   const isFirstSectionHero = page.sections?.[0].type === 'AboutHeroSection';
 
   return (
     <PageLayout
       page={page}
       siteConfig={siteConfig}
+      themeStyle={themeStyle}
       invertedHeader={isFirstSectionHero}
       overlapHeader={isFirstSectionHero}
     >

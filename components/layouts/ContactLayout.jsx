@@ -4,9 +4,9 @@ import Form from '../common/Form';
 import * as L from '../../styles/Layout.styles';
 import * as S from './ContactLayout.styles';
 
-const ContactLayout = ({ page, siteConfig }) => {
+const ContactLayout = ({ page, siteConfig, themeStyle }) => {
   return (
-    <PageLayout page={page} siteConfig={siteConfig}>
+    <PageLayout page={page} siteConfig={siteConfig} themeStyle={themeStyle}>
       <L.Wrapper>
         <L.Spacer />
         <L.Grid>

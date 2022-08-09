@@ -1,0 +1,10 @@
+{
+  "type": "ThemeStyle",
+  "bg-body": "#ffffff",
+  "primary": "#2baf66",
+  "fg-primary": "#000000",
+  "inverted": "#000000",
+  "fg-inverted": "#ffffff",
+  "complementary": "#f3f0eb",
+  "fg-complementary": "#3c6b55"
+}
