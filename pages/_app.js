@@ -12,9 +12,9 @@ function App({ Component, pageProps }) {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/thumbnail.jpg"
+          content={`${process.env.NEXT_PUBLIC_SITE_URL}/thumbnail.jpg`}
         />
-        <meta property="og:url" content={process.env.SITE_URL} />
+        <meta property="og:url" content={process.env.NEXT_PUBLIC_SITE_URL} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
