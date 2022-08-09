@@ -3,6 +3,8 @@ name: ContactLayout
 label: Contact Page
 layout: ContactLayout
 hideContent: true
+extends:
+  - Seo
 fields:
   - type: markdown
     name: content

@@ -3,6 +3,8 @@ name: HomeLayout
 label: Home Page
 layout: HomeLayout
 hideContent: true
+extends:
+  - Seo
 fields:
   - type: string
     name: title

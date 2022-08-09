@@ -3,6 +3,8 @@ name: AboutLayout
 label: About Page
 layout: AboutLayout
 hideContent: true
+extends:
+  - Seo
 fields:
   - type: list
     name: sections

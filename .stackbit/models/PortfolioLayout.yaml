@@ -3,6 +3,8 @@ name: PortfolioLayout
 label: Portfolio Page
 layout: PortfolioLayout
 hideContent: true
+extends:
+  - Seo
 fields:
   - type: markdown
     name: content

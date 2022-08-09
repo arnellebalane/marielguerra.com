@@ -1,0 +1,27 @@
+type: object
+name: Seo
+label: SEO
+fieldGroups:
+  - name: seo
+    label: SEO
+fields:
+  - type: string
+    name: metaTitle
+    label: Title
+    group: seo
+  - type: string
+    name: metaDescription
+    label: Description
+    group: seo
+  - type: image
+    name: socialImage
+    label: Social image
+    group: seo
+  - type: list
+    name: metaTags
+    label: Additional meta tags
+    items:
+      type: model
+      models:
+        - MetaTag
+    group: seo
