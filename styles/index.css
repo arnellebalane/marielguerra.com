@@ -56,3 +56,13 @@ a {
   flex-direction: column;
   min-height: 100vh;
 }
+
+/* OVERRIDES */
+
+#nprogress .bar {
+  background: var(--primary);
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px var(--primary), 0 0 5px var(--primary);
+}
