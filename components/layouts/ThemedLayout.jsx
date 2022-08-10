@@ -7,7 +7,11 @@ const ThemedLayout = ({ children, themeStyle }) => {
     if (sheet) {
       document.adoptedStyleSheets = [sheet];
     } else {
-      setSheet(new CSSStyleSheet());
+      try {
+        setSheet(new CSSStyleSheet());
+      } catch (error) {
+        console.warn('CSSStyleSheet is not yet supported in this browser.');
+      }
     }
   }, [sheet]);
 
