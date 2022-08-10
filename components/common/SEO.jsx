@@ -26,6 +26,7 @@ const SEO = ({ page }) => {
     <Head>
       <link rel="icon" href="/favicon.png" />
       <title>{propertyMetas['og:title']}</title>
+      <meta name="description" content={propertyMetas['og:description']} />
 
       {Object.entries(propertyMetas).map(([property, content], index) => (
         <meta key={index} property={property} content={content} />
