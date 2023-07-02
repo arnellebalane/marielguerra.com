@@ -24,7 +24,7 @@ sections:
       type: Link
       label: Download my resume
       url: >-
-        https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/Mariel+Guerra+Resume.pdf
+        https://drive.google.com/file/d/1SkWmLT4lIGy55Kp3o7Za6BR0hGlPOiz3/view?usp=drive_link
   - type: AboutStorySection
     workExperiences:
       - content/data/work-experiences/workexperience-et8i7aj8x.json
