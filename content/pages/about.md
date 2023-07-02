@@ -2,14 +2,16 @@
 layout: AboutLayout
 sections:
   - type: AboutHeroSection
-    content: |
+    content: >
       # Everyone's got a story to tell.<br>Here's **mine**.
+
 
       I'm Mariel, a filmmaker and designer based in Cebu, Philippines.
 
-      I work on projects related to post-production: video editing, color
-      correction, color grading, as well as sound design, production design, web
-      design, and graphic design.
+
+      I work on projects related to web and graphic design, as well as
+      production design, post-production: video editing, color correction, color
+      grading, and sound design.
     avatar:
       type: Image
       altText: Mariel Guerra
