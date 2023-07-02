@@ -50,7 +50,7 @@ sections:
         to relive my childhood passion, and it was only in 2020 that I finally
         decided to study film.
       - >-
-        Although COVID-19 has robbed me of my diploma, it has not succeeded in
+        Although COVID-19 has concluded my studies, it has not succeeded in
         stopping my pursuit of mastering the art of film.
       - >-
         Fast forward to now, I’m fortunate to have opened enough doors that to
