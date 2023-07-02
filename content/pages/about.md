@@ -24,7 +24,7 @@ sections:
       type: Link
       label: Download my resume
       url: >-
-        https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/Mariel+Guerra+Resume.pdf
+        https://drive.google.com/file/d/1SkWmLT4lIGy55Kp3o7Za6BR0hGlPOiz3/view?usp=drive_link
   - type: AboutStorySection
     workExperiences:
       - content/data/work-experiences/workexperience-et8i7aj8x.json
@@ -50,13 +50,13 @@ sections:
         to relive my childhood passion, and it was only in 2020 that I finally
         decided to study film.
       - >-
-        Although COVID-19 has robbed me of my diploma, it has not succeeded in
+        Although COVID-19 has concluded my studies, it has not succeeded in
         stopping my pursuit of mastering the art of film.
       - >-
         Fast forward to now, I’m fortunate to have opened enough doors that to
         this day, I’m still able to continue to expand my knowledge as I work
-        with like-minded people who share the love I have for storytelling and
-        filmmaking.
+        with like-minded people who share the love I have for storytelling, in
+        whatever form it may take.
     galleries:
       - type: ImageGallery
         images:
