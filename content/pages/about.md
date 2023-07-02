@@ -6,7 +6,7 @@ sections:
       # Everyone's got a story to tell.<br>Here's **mine**.
 
 
-      I'm Mariel, a filmmaker and designer based in Cebu, Philippines.
+      I'm Mariel, a designer and filmmaker based in Cebu, Philippines.
 
 
       I work on projects related to web and graphic design, as well as
