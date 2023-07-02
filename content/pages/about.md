@@ -55,8 +55,8 @@ sections:
       - >-
         Fast forward to now, I’m fortunate to have opened enough doors that to
         this day, I’m still able to continue to expand my knowledge as I work
-        with like-minded people who share the love I have for storytelling,
-        however that may be.
+        with like-minded people who share the love I have for storytelling in
+        whatever form it may take.
     galleries:
       - type: ImageGallery
         images:
