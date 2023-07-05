@@ -33,6 +33,6 @@ reel:
   title: Mariel Guerra Reel
   url: >-
     https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/Mariel+Guerra+Reel.mp4
-metaTitle: Portfolio | Mariel Guerra
+metaTitle: Film | Mariel Guerra
 metaDescription: Production Design/Edit/Color by Mariel Guerra
 ---
