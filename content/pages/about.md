@@ -71,7 +71,7 @@ sections:
             url: /images/gallery-1-3.jpg
           - type: Image
             altText: Gallery Image 1-4
-            url: /images/gallery-1-4.jpg
+            url: /images/Love and Peace.png
         imageLayout: layoutOne
       - type: ImageGallery
         images:
