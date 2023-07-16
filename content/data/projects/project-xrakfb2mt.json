@@ -1,20 +1,18 @@
 {
-    "type": "Project",
-    "title": "G Diaries",
-    "description": "Season 9 Episode 2: Be Climate Change Ready",
-    "bgColor": "#272727",
-    "textColor": "#FFE7BE",
-    "tags": [
-        "TV"
-    ],
-    "thumbnail": {
-        "type": "Image",
-        "altText": "Replace this alternate text",
-        "url": "/images/GD S9E2.png"
-    },
-    "video": {
-        "type": "Video",
-        "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects/G+Diaries+S9E2.mp4",
-        "title": "G Diaries"
-    }
+  "type": "Project",
+  "title": "G Diaries",
+  "description": "Season 9 Episode 2: Be Climate Change Ready",
+  "bgColor": "#272727",
+  "textColor": "#FFE7BE",
+  "tags": ["TV"],
+  "thumbnail": {
+    "type": "Image",
+    "altText": "Replace this alternate text",
+    "url": "/images/GD-S9E2.png"
+  },
+  "video": {
+    "type": "Video",
+    "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects/G+Diaries+S9E2.mp4",
+    "title": "G Diaries"
+  }
 }

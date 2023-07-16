@@ -85,7 +85,7 @@ sections:
             url: /images/gallery-2-3.jpg
           - type: Image
             altText: Gallery Image 2-4
-            url: /images/Ngohiong 2.png
+            url: /images/Ngohiong-2.png
         imageLayout: layoutTwo
       - type: ImageGallery
         images:
@@ -110,5 +110,5 @@ sections:
       label: Check my portfolio
       url: /portfolio/
 metaTitle: About | Mariel Guerra
-metaDescription: 'I''m Mariel, a filmmaker and designer based in Cebu, Philippines.'
+metaDescription: "I'm Mariel, a filmmaker and designer based in Cebu, Philippines."
 ---

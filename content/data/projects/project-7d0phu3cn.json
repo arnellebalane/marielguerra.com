@@ -1,20 +1,18 @@
 {
-    "type": "Project",
-    "title": "G Diaries",
-    "description": "Season 9 Episode 4: Wildlife Treasures",
-    "bgColor": "#3C4299",
-    "textColor": "#EDE6E8",
-    "tags": [
-        "TV"
-    ],
-    "thumbnail": {
-        "type": "Image",
-        "altText": "Replace this alternate text",
-        "url": "/images/GD S9E4.png"
-    },
-    "video": {
-        "type": "Video",
-        "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects-encoded/G+Diaries+S9E4.mp4",
-        "title": "G Diaries"
-    }
+  "type": "Project",
+  "title": "G Diaries",
+  "description": "Season 9 Episode 4: Wildlife Treasures",
+  "bgColor": "#3C4299",
+  "textColor": "#EDE6E8",
+  "tags": ["TV"],
+  "thumbnail": {
+    "type": "Image",
+    "altText": "Replace this alternate text",
+    "url": "/images/GD-S9E4.png"
+  },
+  "video": {
+    "type": "Video",
+    "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects-encoded/G+Diaries+S9E4.mp4",
+    "title": "G Diaries"
+  }
 }

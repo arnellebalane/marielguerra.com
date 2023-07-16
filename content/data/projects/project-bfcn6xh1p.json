@@ -1,20 +1,18 @@
 {
-    "type": "Project",
-    "title": "Ngohiong 五香肉捲",
-    "description": "Short Film",
-    "bgColor": "#FFA858",
-    "textColor": "#0C0A1B",
-    "tags": [
-        "film"
-    ],
-    "thumbnail": {
-        "type": "Image",
-        "altText": "Replace this alternate text",
-        "url": "/images/Ngohiong 2.png"
-    },
-    "video": {
-        "type": "Video",
-        "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects-encoded/Ngohiong.mp4",
-        "title": "Ngohiong"
-    }
+  "type": "Project",
+  "title": "Ngohiong 五香肉捲",
+  "description": "Short Film",
+  "bgColor": "#FFA858",
+  "textColor": "#0C0A1B",
+  "tags": ["film"],
+  "thumbnail": {
+    "type": "Image",
+    "altText": "Replace this alternate text",
+    "url": "/images/Ngohiong-2.png"
+  },
+  "video": {
+    "type": "Video",
+    "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects-encoded/Ngohiong.mp4",
+    "title": "Ngohiong"
+  }
 }

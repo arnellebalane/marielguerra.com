@@ -7,7 +7,4 @@ module.exports = {
   compiler: {
     styledComponents: true,
   },
-  images: {
-    unoptimized: true,
-  },
 };
