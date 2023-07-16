@@ -86,7 +86,7 @@ sections:
             url: /images/gallery-2-3.jpg
           - type: Image
             altText: Gallery Image 2-4
-            url: /images/gallery-2-4.jpg
+            url: /images/Ngohiong 2.png
         imageLayout: layoutTwo
       - type: ImageGallery
         images:
