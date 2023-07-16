@@ -15,7 +15,7 @@ sections:
     avatar:
       type: Image
       altText: Mariel Guerra
-      url: /images/Mariel Guerra Profile pic-2351e394.png
+      url: /images/Mariel-Guerra-Profile-pic-2351e394.png
     background:
       type: Image
       altText: Mariel Guerra Banner
