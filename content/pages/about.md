@@ -92,7 +92,7 @@ sections:
         images:
           - type: Image
             altText: Gallery Image 3-1
-            url: /images/gallery-3-1.jpg
+            url: /images/AEHEF_Past_Activities.width-1200.jpg
           - type: Image
             altText: Gallery Image 3-2
             url: /images/gallery-3-2.jpg
