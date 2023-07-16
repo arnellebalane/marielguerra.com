@@ -1,20 +1,18 @@
 {
-    "type": "Project",
-    "title": "We Come In Peace 我們為和平來",
-    "description": "Art Exhibition Teaser Video",
-    "bgColor": "#FFA858",
-    "textColor": "#0C0A1B",
-    "tags": [
-        "commercial"
-    ],
-    "thumbnail": {
-        "type": "Image",
-        "altText": "Replace this alternate text",
-        "url": "/images/We Come In Peace Banner.png"
-    },
-    "video": {
-        "type": "Video",
-        "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects/We+Come+In+Peace.mp4",
-        "title": "We Come In Peace"
-    }
+  "type": "Project",
+  "title": "We Come In Peace 我們為和平來",
+  "description": "Art Exhibition Teaser Video",
+  "bgColor": "#FFA858",
+  "textColor": "#0C0A1B",
+  "tags": ["commercial"],
+  "thumbnail": {
+    "type": "Image",
+    "altText": "Replace this alternate text",
+    "url": "/images/We-Come-In-Peace-Banner.png"
+  },
+  "video": {
+    "type": "Video",
+    "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects/We+Come+In+Peace.mp4",
+    "title": "We Come In Peace"
+  }
 }

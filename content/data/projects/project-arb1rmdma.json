@@ -1,20 +1,18 @@
 {
-    "type": "Project",
-    "title": "Everlasting Hope",
-    "description": "Documentary",
-    "bgColor": "#C1D279",
-    "textColor": "#180005",
-    "tags": [
-        "documentary"
-    ],
-    "thumbnail": {
-        "type": "Image",
-        "altText": "Replace this alternate text",
-        "url": "/images/Everylasting Hope.png"
-    },
-    "video": {
-        "type": "Video",
-        "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects/Everlasting+Hope.mp4",
-        "title": "Everlasting Hope"
-    }
+  "type": "Project",
+  "title": "Everlasting Hope",
+  "description": "Documentary",
+  "bgColor": "#C1D279",
+  "textColor": "#180005",
+  "tags": ["documentary"],
+  "thumbnail": {
+    "type": "Image",
+    "altText": "Replace this alternate text",
+    "url": "/images/Everylasting-Hope.png"
+  },
+  "video": {
+    "type": "Video",
+    "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects/Everlasting+Hope.mp4",
+    "title": "Everlasting Hope"
+  }
 }

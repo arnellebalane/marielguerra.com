@@ -1,20 +1,18 @@
 {
-    "type": "Project",
-    "title": "Happy Brew: Sharing Happiness",
-    "description": "Music Video Ad",
-    "bgColor": "#FAD116",
-    "textColor": "#392821",
-    "tags": [
-        "commercial"
-    ],
-    "thumbnail": {
-        "type": "Image",
-        "altText": "Replace this alternate text",
-        "url": "/images/Happy Brew.png"
-    },
-    "video": {
-        "type": "Video",
-        "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects/Sharing+Happiness+-+Happy+Brew.mp4",
-        "title": "Sharing Happiness - Happy Brew"
-    }
+  "type": "Project",
+  "title": "Happy Brew: Sharing Happiness",
+  "description": "Music Video Ad",
+  "bgColor": "#FAD116",
+  "textColor": "#392821",
+  "tags": ["commercial"],
+  "thumbnail": {
+    "type": "Image",
+    "altText": "Replace this alternate text",
+    "url": "/images/Happy-Brew.png"
+  },
+  "video": {
+    "type": "Video",
+    "url": "https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/projects/Sharing+Happiness+-+Happy+Brew.mp4",
+    "title": "Sharing Happiness - Happy Brew"
+  }
 }
