@@ -71,7 +71,7 @@ sections:
             url: /images/gallery-1-3.jpg
           - type: Image
             altText: Gallery Image 1-4
-            url: /images/gallery-1-4.jpg
+            url: /images/LoveandPeace.png
         imageLayout: layoutOne
       - type: ImageGallery
         images:
@@ -86,13 +86,13 @@ sections:
             url: /images/gallery-2-3.jpg
           - type: Image
             altText: Gallery Image 2-4
-            url: /images/gallery-2-4.jpg
+            url: /images/Ngohiong 2.png
         imageLayout: layoutTwo
       - type: ImageGallery
         images:
           - type: Image
             altText: Gallery Image 3-1
-            url: /images/gallery-3-1.jpg
+            url: /images/AEHEF_Past_Activities.width-1200.jpg
           - type: Image
             altText: Gallery Image 3-2
             url: /images/gallery-3-2.jpg
