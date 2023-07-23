@@ -2,8 +2,8 @@
 layout: HomeLayout
 title: Mariel Guerra
 link:
-  label: See my works
-  url: /portfolio/
+  label: Get to know me
+  url: /about/
 background:
   type: Video
   url: >-
