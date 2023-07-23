@@ -110,5 +110,5 @@ sections:
       label: Check my portfolio
       url: /portfolio/
 metaTitle: About | Mariel Guerra
-metaDescription: 'I''m Mariel, a filmmaker and designer based in Cebu, Philippines.'
+metaDescription: 'I''m Mariel, a designer and filmmaker from Cebu, Philippines.'
 ---
