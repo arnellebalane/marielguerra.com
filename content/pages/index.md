@@ -3,7 +3,7 @@ layout: HomeLayout
 title: Mariel Guerra
 link:
   label: Get to know me
-  url: /portfolio/
+  url: /about/
 background:
   type: Video
   url: >-
