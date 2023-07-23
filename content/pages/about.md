@@ -23,8 +23,7 @@ sections:
     resume:
       type: Link
       label: Download my resume
-      url: >-
-        https://github.com/arnellebalane/marielguerra.com/tree/main/public/files/MarielGuerra_Resume-2023.pdf
+      url: 'https://marielguerra.com/public/files/MarielGuerra_Resume-2023.pdf'
   - type: AboutStorySection
     workExperiences:
       - content/data/work-experiences/workexperience-et8i7aj8x.json
