@@ -10,6 +10,6 @@ background:
     https://s3.ap-southeast-1.amazonaws.com/cdn.marielguerra.com/Mariel+Guerra+Reel+Preview.mp4
   title: Mariel Guerra Reel Preview
 metaTitle: Mariel Guerra
-metaDescription: 'Video Editor, Designer'
+metaDescription: 'Designer, Video Editor'
 metaTags: []
 ---
